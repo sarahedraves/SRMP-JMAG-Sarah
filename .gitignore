@@ -1,6 +1,9 @@
 */.ipynb_checkpoints/*
 */data/*
 
+.ipynb_checkpoints/
+data/*.fits
+
 **/__pycache__/
 
 Gideon.ipynb
