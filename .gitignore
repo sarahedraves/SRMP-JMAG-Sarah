@@ -9,3 +9,7 @@ data/*.fits
 Gideon.ipynb
 Jonathan.ipynb
 Annabelle.ipynb
+
+.env
+*.zip
+build/
