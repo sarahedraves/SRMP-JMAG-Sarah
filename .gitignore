@@ -13,3 +13,6 @@ Annabelle.ipynb
 .env
 *.zip
 build/
+
+*.pdf
+*.tex
