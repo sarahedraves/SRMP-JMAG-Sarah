@@ -1,0 +1,291 @@
+Title: Rotation of Low-Mass Stars in Taurus with K2 
+Authors: Rebull L.M., Stauffer J.R., Cody A.M., Hillenbrand L.A., 
+         Bouvier J., Roggero N., David T.J. 
+Table: Periods and Supporting Data for Taurus Members with K2 Light Curves
+================================================================================
+Byte-by-byte Description of file: ajab893ct2_mrt.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units Label     Explanations
+--------------------------------------------------------------------------------
+   1-  9 I9     ---   EPIC      EPIC identifier
+  11- 28 A18    ---   Coord     RA/DE coordinates (J2000); hhmmss.ss+ddmmss.s
+  30- 52 A23    ---   OName     Other target identifier
+  54- 72 A19    ---   Gaia      Gaia DR2 identifier
+  74- 78 F5.2   mag   Vmag      ? Apparent V band Vega magnitude
+  80- 84 F5.2   mag   Ksmag     Apparent Ks band Vega magnitude
+  86- 90 F5.2   mag   (V-Ks)o   ? Observed (V-Ks) color
+  92- 96 F5.2   mag   (V-Ks)u   Used (V-Ks) color (1)
+  98-102 F5.2   mag   E(V-Ks)   Adopted (V-Ks) color excess (2)
+ 104-108 F5.2   mag   Ksmag0    Inferred dereddended Ks Vega magnitude (2)
+ 110-114 F5.2   mag   (V-Ks)0   Inferred dereddended (V-Ks) color (2,3)
+ 116-119 A4     ---   Uncert    Uncertainty code (4)
+ 121-127 F7.4   d     P1        ? Primary period (5)
+ 129-135 F7.4   d     P2        ? Secondary period 
+ 137-143 F7.4   d     P3        ? Tertiary period 
+ 145-150 F6.4   d     P4        ? Quaternary period 
+ 152-162 A11    ---   Member    Membership classification (6)
+ 164-168 A5     ---   IRexcess  Presence of an IR excess; see S 4
+ 170-173 A4     ---   IRexStr   Minimum wavelength where IR excess is detected
+                                   (7)
+ 175-179 F5.2   ---   Slope     ? SED slope (8)
+ 181-184 A4     ---   Class     SED class; I, flat, II, or III
+ 186-188 A3     ---   dip       LC matches dipper characteristics (9)
+ 190-192 A3     ---   burst     LC matches burster characteristics (9)
+ 194-199 A6     ---   sin/mult  Single or multi-period star flag
+ 201-203 A3     ---   dd        LC and power spectrum matches double-dip
+                                   characteristics (9)
+ 205-207 A3     ---   ddmove    LC and power spectrum matche moving double-dip
+                                   characteristics (9)
+ 209-211 A3     ---   shape     LC matches shape changer characteristics (9)
+ 213-215 A3     ---   beat      LC has beating visible (9)
+ 217-219 A3     ---   complex   Power spectrum has a complex, structured peak
+                                   and/or wide peak (9)
+ 221-223 A3     ---   closep    Power spectrum has resolved close peaks (9)
+ 225-227 A3     ---   distp     Power spectrum has resolved distant peaks (9)
+ 229-231 A3     ---   pulse     Power spectrum and LC match pulsator
+                                   characteristics (9)
+--------------------------------------------------------------------------------
+Note (1): Observed or inferred; see text.
+Note (2): See S 2.5.
+Note (3): Rounded to nearest 0.1 to emphasize the relatively low accuracy.
+Note (4): Two digit code denoting origin of (V-Ks)o and (V-Ks)0 (see S 2.3 
+          and S 2.5). First digit (origin of (V-Ks)o): 
+    1 = V measured directly from the literature (including SIMBAD) 
+        and Ks from 2MASS;
+    2 = V from APASS and Ks from 2MASS;
+    3 = (V-Ks)o inferred from Gaia g and Ks from 2MASS (see S 2.3);
+    4 = (V-Ks)o inferred from Pan-STARRS1 g and Ks from 2MASS (see S 2.3);
+    5 = (V-Ks)o inferred from membership work (see S 2.2; rare);
+    6 = V inferred from well-populated optical SED and Ks from 
+        2MASS (see S 2.3);
+   -9 = no measure of (V-Ks). 
+   
+          Second digit (origin of E(V-Ks) leading to (V-Ks)0): 
+    1 = dereddening from JHKs diagram (see S 2.5);
+    2 = dereddening back to (V-Ks)0 expected for spectral type;
+    3 = used median E(V-Ks)=0.7 (see S 2.5);
+   -9 = no measure of E(V-Ks).
+Note (5): Taken to be rotation period in cases where there is > 1 period.
+Note (6): Highest quality member, possible member, 
+          foreground young star (see S 2.2).
+Note (7): Or the limit of our knowledge of where there is no excess (see S 4).
+Note (8): Fit to all available detections between 2 and 25 um.
+Note (9): See S 6.2.
+--------------------------------------------------------------------------------
+210621891 040322.36+171627.0 HD285373                  46431658784058752  9.75  8.32  1.44  1.44  0.10  8.30  1.34 1, 2                                fgnd        no         -2.73 III          single no  no  yes yes no  no  no  no  
+210631263 040324.94+172425.8 HD285372                  46622664569875840 11.60  8.80  2.80  2.80  0.05  8.79  2.75 1, 2                                fgnd        no         -2.82 III          single yes no  yes no  no  no  no  no  
+210830948 040348.38+202024.0                           52091669766748928       10.71        5.06  0.00 10.71  5.06 2, 3                                fgnd        no         -2.50 III          single no  no  no  no  no  no  no  no  
+210934391 040428.47+215604.4 2MASSJ04042848+2156046    53092225348322816  9.47  8.16  1.31  1.31  0.87  8.05  0.44 1, 1                                fgnd        no         -2.82 III          multi  no  no  yes yes no  yes no  no  
+210934910 040432.15+215635.0                           53092328427534336        9.74        4.29  1.03  9.61  3.26 2, 3                                fgnd        no         -2.57 III          single yes yes yes no  no  no  no  no  
+210936710 040439.36+215818.4 2MASSJ04043936+2158186    53092775104124288 14.97  9.97  5.00  5.00  0.04  9.96  4.96 1, 2                                fgnd        no         -2.57 III          multi  no  no  no  no  no  yes no  no  
+210936757 040439.84+215821.3 2MASSJ04043984+2158215    53092775104123776 15.09 10.10  4.99  4.99  0.12 10.09  4.87 1, 2                                fgnd        no         -2.54 III          single no  no  no  no  no  no  no  no  
+210938106 040449.55+215940.4                           53116311524896896       10.84        5.08  0.00 10.84  5.08 2, 1                                fgnd        no         -2.48 III          single no  no  no  no  no  no  no  no  
+210946427 040513.07+220743.7 EPIC210946427             53119025944191616 13.67 10.31  3.36  3.36  0.00 10.31  3.36 1, 1                                fgnd        no         -2.60 III          single no  no  no  no  no  no  no  no  
+210834430 040513.22+202336.6 EPIC210834430             52086618885296768       12.12        5.63  0.74 12.03  4.89 3, 3                                fgnd        no         -2.33 III          single no  no  no  no  no  no  no  no  
+210817793 040514.35+200821.5 HD284154                  51884824140205824  8.51  6.95  1.56  1.56  0.19  6.92  1.37 1, 2                                fgnd        yes   22   -2.50 III          single no  no  yes no  no  no  no  no  
+210818897 040519.59+200925.4 V*V1298Tau                51886335968692480 10.12  8.09  2.03  2.03  0.20  8.07  1.83 1, 3                                fgnd        no         -2.75 III          multi  yes yes yes no  yes no  yes no  
+210929228 040530.87+215110.5 2MASSJ04053087+2151106    53098994216894208 14.67 10.06  4.61  4.61  0.79  9.95  3.83 1, 3                                fgnd        no         -2.68 III          single no  no  no  no  no  no  no  no  
+210963463 040708.91+222350.1                           53502102665785984       12.26        5.66  0.98 12.14  4.68 3, 3                                fgnd        no         -2.77 III          single no  no  no  no  no  no  no  no  
+210959901 040731.49+222022.3                           53489011605468032       11.76        5.17  0.00 11.76  5.17 3, 1                                fgnd        no         -2.56 III          single no  no  no  no  no  no  no  no  
+210977750 040735.02+223739.4 2MASSJ04073502+2237394    53515017631040384       11.25        6.11  0.03 11.25  6.08 6, 2                                fgnd        no         -2.61 III          multi  no  no  no  no  no  yes no  no  
+210725453 040802.52+184416.7                           47200973325222272       12.50        5.77  0.84 12.39  4.93 3, 3                                fgnd        no         -2.22 III          single no  no  no  no  no  no  no  no  
+210879662 040926.32+210431.6 EPIC210879662             52060642920946048        9.67        4.27  0.98  9.54  3.29 2, 3                                fgnd        no         -2.70 III          single no  no  yes no  no  no  no  no  
+211068851 040943.68+240422.6 HD26212                   53954070664670848  7.38  6.82  0.56  0.56  0.33  6.78  0.23 1, 2                                fgnd        no         -2.83 III                 no  no  no  no  no  no  no  no  
+210855900 041013.29+204250.5                           51967145776584704       10.25        4.77  0.46 10.19  4.31 2, 4                                fgnd        no         -2.59 III          single no  no  no  no  no  no  no  no  
+210865655 041028.34+205150.7 WISEJ041028.34+205150.6   52039511681854208       12.83        6.84  0.11 12.81  6.73 3, 2                                cand.~memb. yes   4.5  -1.03 II       yes multi  no  no  yes no  no  no  yes no  
+211104793 041240.70+243815.7 2MASSJ04124068+2438157   150073682105601408       10.04        6.44  1.44  9.86  5.00 3, 2                                member      yes   4.5  -0.66 II       yes single no  no  yes no  no  no  no  no  
+210783336 041250.61+193657.7 V*V1307Tau                48841131139979904 12.51  9.24  3.27  3.27  0.78  9.14  2.49 1, 1                                fgnd        no         -2.72 III          multi  no  no  yes no  yes yes yes no  
+210658027 042052.74+174641.4 Cl*Melotte25LH206         47446336216710784 16.47 10.78  5.69  5.69  0.59 10.70  5.10 1, 3                                fgnd        no         -2.43 III          single no  no  no  yes no  no  no  no  
+210777988 042159.43+193206.4 V*TTau                    48192969034959232        5.32        4.83  2.64  4.99  2.19 2, 2                                member      yes   K     0.00 flat         single no  no  yes no  no  no  no  no  
+210780956 042204.97+193448.4 2MASSJ04220496+1934483    48193213849576320        8.69        6.96  1.31  8.52  5.65 6, 2                                member      no         -2.49 III          single no  no  no  no  no  no  no  no  
+210780789 042213.32+193439.2 2MASSJ04221332+1934392    48193316928788352       11.52        9.05  1.99 11.27  7.06 3, 1                                member      no         -2.50 III          multi  no  no  no  no  no  yes no  no  
+247986526 042702.79+254222.3 DFTauAB                  151179966897747840        6.73        5.01  0.51  6.67  4.50 2, 2                                member      yes   3.5  -1.12 II       yes        no  no  no  no  no  no  no  no  
+210689130 042704.86+181227.1 HD28150                 3314449974839279488  6.92  6.81  0.11  0.11  0.00  6.81  0.11 1, 1  0.6981                        cand.~memb. no         -2.89 III          multi  no  no  no  no  no  no  no  yes 
+210689309 042705.97+181237.0 AG+18339                3314450009199016576  8.73  7.84  0.89  0.89  1.37  7.67 -0.48 1, 1  0.5863                        cand.~memb. no         -2.87 III          multi  no  no  no  no  no  no  no  yes 
+210954163 042707.39+221503.7 2MASSJ04270739+2215037   145494460991086976       11.29        6.94  0.61 11.22  6.33 4, 1  1.8688                        member      no         -2.32 III          single no  no  no  no  no  no  no  no  
+210662824 042710.57+175042.6 HD285778                3314376204481063680 10.22  8.30  1.92  1.92  0.46  8.24  1.46 1, 4  2.7503                        fgnd        no         -2.83 III          single yes yes yes no  no  no  yes no  
+247735103 042745.38+235724.3 2MASSJ04274538+2357243   146319193494413696       13.69        9.09  0.46 13.63  8.63 3, 4  0.6813                        member      no         -2.29 III          single no  no  no  no  no  no  no  no  
+247738463 042829.99+235848.2                          146317200629602048       14.60        7.82  2.60 14.26  5.21 4, 1                                member      maybe 4.6  -1.92 III                 no  no  no  no  no  no  no  no  
+210509151 042841.99+153353.5 2MASSJ04284199+1533535  3312717866068452736       12.04        5.61  0.79 11.94  4.82 3, 3  1.1036                        fgnd        no         -2.40 III          single no  no  no  no  no  no  no  no  
+210725857 042850.53+184436.1 2MASSJ04285053+1844361  3314586142482134144       10.02        7.24  0.59  9.94  6.64 4, 1  2.0632                        member      yes   4.5  -0.86 II           single no  no  yes no  no  no  no  no  
+247820507 042923.73+243259.9 [RRA2004]Haro6-10VLA1    149367383323435648        8.05       12.55  9.20  6.87  3.35 3, 2                                member      yes   2     0.76 I            single no  no  yes no  no  no  no  no  
+247837468 042930.08+243955.0 IRAS04264+2433                                    11.14       11.36  7.14 10.22  4.22 6, 2 11.8717                        member      yes   3.5   1.42 I            single no  no  yes no  no  no  no  no  
+247559785 042930.10+223915.4                          145886539965771648        9.51        5.30  0.52  9.45  4.78 2, 2  1.5787                        member      no         -2.72 III          single no  no  no  no  no  no  no  no  
+247827638 042936.06+243555.6 2MASSJ04293606+2435556   149369139966814976        8.66        9.75  4.97  8.02  4.78 3, 2  3.9206                        member      yes   3.5  -1.14 II   yes     single no  no  yes no  no  no  no  no  
+248040905 042951.55+260644.8 V*IQTau                  151297958238753664 13.80  7.78  6.02  6.02  1.77  7.55  4.25 1, 2  6.6721                        member      yes   3.5  -0.98 II           single no  no  yes no  no  no  no  no  
+247820821 042959.50+243307.8 2MASSJ04295950+2433078   146366442430208640 16.31  9.81  6.50  6.50  0.42  9.76  6.08 1, 2  2.3819                        member      yes   3.5  -0.93 II           single no  no  yes no  no  no  no  no  
+210690736 043003.58+181349.4 UXTauB                  3314508626912469888        8.92        4.84  0.34  8.88  4.50 3, 2  4.2035                        member      no         -2.68 III          multi  no  no  yes no  no  no  no  no  
+210690735 043003.99+181349.4 V*UXTau                 3314508622616073472 10.80  7.55  3.25  3.25  1.06  7.41  2.19 1, 2  3.6584                        member      yes   3.5  -0.87 II           multi  no  no  yes no  no  no  no  no  
+248044306 043007.24+260820.7 [BLH2002]KPNO-Tau6       151296579553731456 22.29 13.69  8.60  8.60  2.10 13.42  6.50 1, 1                                member      yes   3.5  -1.20 II                  no  no  no  no  no  no  no  no  
+247739445 043023.65+235912.9 2MASSJ04302365+2359129   146285112929523456       13.70       10.25  0.84 13.59  9.41 6, 2  1.6119                        member      no         -2.30 III          single no  no  no  no  no  no  no  no  
+247805410 043029.61+242645.0 V*FXTau                  146361013590374144 14.40  7.92  6.48  6.48  1.92  7.68  4.56 1, 2                                member      yes   3.5  -0.92 II   yes            no  no  no  no  no  no  no  no  
+248029373 043044.24+260124.6 DKTauAB                  151106780654065792        7.10        5.69  1.97  6.84  3.72 2, 2  7.8414                        member      yes   3.5  -0.88 II           single no  no  yes no  no  no  no  no  
+247604953 043050.29+230008.9 IRAS04278+2253AB         145921994918655488        5.86       15.27 13.25  4.15  2.02 3, 2  9.2225                        member      yes   k    -0.47 II           single no  no  yes no  no  no  no  no  
+247843485 043051.38+244222.3 V*ZZTau                  147869784062378624 12.90  8.44  4.46  4.46  0.26  8.41  4.20 1, 1  4.1609                        member      yes   5.8  -1.19 II           single no  no  yes yes no  no  no  no  
+247842020 043051.71+244147.5 ZZTauIRS                 147869573608324992       10.31       10.97  5.32  9.63  5.65 3, 2                                member      yes   k     0.18 flat                no  no  no  no  no  no  no  no  
+248018652 043057.18+255639.4 [BLH2002]KPNO-Tau7       151102790629500288 22.07 13.27  8.80  8.80  1.82 13.04  6.97 1, 3  1.1572                        member      yes   3.5  -0.93 II           single no  no  no  no  no  no  no  no  
+210698143 043115.78+182007.0 2MASSJ04311578+1820072  3314328822401984768 15.72 10.30  5.42  5.42  0.44 10.25  4.97 1, 3  1.5954  3.4961                member      no         -2.61 III          multi  no  no  no  no  no  no  yes no  
+247454835 043116.85+215025.2 HD284496                 145034968209407232 10.80  8.73  2.06  2.06  0.69  8.65  1.37 1, 2  2.7733  2.6530                cand.~memb. no         -2.73 III          multi  no  no  yes yes yes yes no  no  
+247766994 043123.81+241052.9 EM*LkHA331                                         8.77        5.96  0.30  8.73  5.65 2, 2  0.6074  4.2536                member      no         -2.68 III          multi  no  no  no  yes no  no  yes no  
+210674635 043124.05+180021.5 2MASSJ04312405+1800215  3314299238667410176 18.68 10.57  8.11  8.11  1.06 10.43  7.05 1, 1  2.2098                        member      no         -2.57 III          single no  no  no  no  no  no  no  no  
+210683818 043134.07+180804.9 HBC393                                             9.82       13.41 11.22  8.38  2.19 6, 2                                member      yes   k     1.94 I                   no  no  no  no  no  no  no  no  
+210690598 043136.13+181343.2 EM*LkHA358              3314312226648610560 19.00  9.69  9.31  9.31  5.12  9.03  4.19 1, 2  3.5045  3.7378                member      yes   k    -0.78 II       yes multi  no  no  yes no  yes yes no  no  
+210689083 043137.47+181224.4 V*V1213Tau                                        13.37        5.14  1.18 13.21  3.96 4, 2  7.5006                        member      yes   k    -0.29 flat         single no  no  yes no  no  no  no  no  
+210690913 043138.47+181358.0 V*HLTau                                     15.10  7.41  7.69  7.69  4.63  6.81  3.06 1, 2                                member      yes   k     0.20 flat         single no  no  no  no  no  no  no  no  
+210690892 043140.07+181357.1 XZTauAB                 3314312604605602688        7.29        8.43  3.93  6.79  4.50 3, 2                                member      yes   k    -0.26 flat                no  no  no  no  no  no  no  no  
+210684392 043144.44+180831.5 2MASSJ04314444+1808315                            11.41       15.74 14.30  9.57  1.44 6, 1                                member      yes   k     1.18 I                   no  no  no  no  no  no  no  no  
+247901971 043146.44+250623.6 2MASSJ04314644+2506236   150908490604475520       11.11        6.61  0.72 11.02  5.89 4, 1  2.6458                        member      no         -2.43 III          single no  no  yes no  no  no  no  no  
+247799571 043150.57+242417.7 V*HKTau                  147847072275324416 15.10  8.59  6.51  6.51  2.29  8.30  4.22 1, 2  3.3056                        member      yes   3.6  -0.46 II           single no  no  yes no  no  no  no  no  
+210699801 043157.79+182137.9 EM*LkHA267              3314326829537259648        8.65        4.90  0.30  8.62  4.61 2, 3  4.3047  1.0700                member      yes   3.6  -0.93 II           multi  no  no  yes yes no  no  yes no  
+247989075 043158.45+254329.9 2MASSJ04315844+2543299   151037064744973696 15.96  9.56  6.40  6.40  0.41  9.51  5.99 1, 2  1.4637                        member      no         -2.59 III          single no  no  no  no  no  no  no  no  
+210699670 043159.68+182130.5 2MASSJ04315968+1821305  3314326760817782528       10.04       11.16  6.52  9.20  4.64 3, 2                                member      yes   3.6  -0.83 II       yes        no  no  no  no  no  no  no  no  
+247953586 043203.29+252807.8 2MASSJ04320329+2528078   151028990206478080       10.72        6.97  0.53 10.65  6.44 4, 1  2.3765                        member      no         -2.44 III          single yes yes yes no  no  no  no  no  
+210670948 043209.28+175722.6 [FK83]LDN155151         3314251749212034816        8.85        3.38  0.59  8.77  2.78 2, 1  2.4282                        member      no         -2.75 III          single no  no  yes no  no  no  no  no  
+210698281 043214.56+182014.8 V*V827Tau               3314338163954491136 12.18  8.23  3.95  3.95  1.79  8.00  2.16 1, 1  3.7582                        member      no         -2.75 III          single no  no  no  no  no  no  no  no  
+247810751 043215.40+242859.7 Haro6-13                 147806733942555008 17.70  8.10  9.60  9.60  5.64  7.38  3.96 1, 2  3.2778                        member      yes   k    -0.35 II       yes single no  no  yes no  no  no  no  no  
+247032616 043215.84+180138.7 V*V826Tau               3314258999116827776 12.07  8.25  3.83  3.83  0.21  8.22  3.62 1, 2  3.8829                        member      no         -2.72 III          single no  no  no  no  no  no  no  no  
+247051861 043216.07+181246.3 2MASSJ04321606+1812464  3314309890186259712 17.59 10.06  7.53  7.53  0.15 10.04  7.38 1, 2  2.6496                        member      yes   3.5  -1.08 II           single no  no  no  no  no  no  no  no  
+247794636 043217.86+242214.9 2MASSJ04321786+2422149   147799209159857280 18.20 10.38  7.82  7.82  0.44 10.33  7.38 1, 2  1.7211  2.6225  1.8068        member      maybe 4.5  -2.53 III          multi  no  no  no  no  no  yes yes no  
+247795097 043218.87+242227.1 V*V928Tau                147799312239072000        8.11        5.99  1.83  7.87  4.17 2, 2  2.2468  2.4876                member      no         -2.73 III          multi  no  no  no  yes no  yes no  no  
+247078342 043222.10+182742.6 2MASSJ04322210+1827426  3314351053152780032       10.65        6.57  0.70 10.56  5.87 3, 2  1.9240                        member      yes   3.5  -1.24 II   yes     single no  no  yes no  no  no  no  no  
+247748412 043223.29+240301.3 2MASSJ04322329+2403013   146277553787186048       11.33        7.81  0.76 11.23  7.05 4, 1  3.3643                        member      no         -2.39 III          single no  no  yes no  no  no  no  no  
+247585465 043224.15+225108.3 2MASSJ04322415+2251083   145950895754320384       10.53        6.48  0.83 10.42  5.65 4, 2  2.4814                        member      yes   4.5  -1.06 II       yes single no  no  yes no  no  no  no  no  
+247078637 043226.27+182752.1 2MASSJ04322627+1827521  3314352530621527296       10.17        6.23  0.46 10.11  5.77 3, 4  2.5667                        member      no         -2.73 III          single yes no  no  no  no  no  no  no  
+247788960 043230.57+241957.3 V*FYTau                  147796013704189440        8.05        8.70  4.71  7.45  3.99 3, 2  6.9437                        member      yes   3.5  -1.16 II       yes single no  no  no  no  no  no  no  no  
+247789209 043231.76+242003.1 V*FZTau                  147796013704188928        7.35        9.94  5.85  6.59  4.09 3, 2                                member      yes   3.5  -0.89 II       yes        no  no  no  no  no  no  no  no  
+247599080 043232.05+225726.6 IRAS04295+2251                                    10.14       13.01  9.39  8.93  3.62 6, 2  1.7081                        member      yes   k     0.60 I            single no  no  no  no  no  no  no  no  
+247046059 043241.07+180924.0 2MASSJ04324107+1809239  3314261649113588608       10.34        6.03  0.46 10.28  5.57 3, 1  1.9918                        member      yes   4.5  -1.33 II       yes single yes no  yes no  no  no  no  no  
+248009353 043242.81+255231.3 UZTauAB                  151045650384745216 12.72  7.47  5.25  5.25  0.75  7.38  4.50 1, 2  3.7527                        member      yes   k    -0.45 II       yes single no  no  yes no  no  no  no  no  
+247034775 043243.73+180256.3 V*V1076Tau              3314258591096887552        9.31        3.80  0.26  9.28  3.54 2, 2  9.5412                        member      no         -2.70 III          single yes yes yes no  no  no  no  no  
+247589612 043249.11+225302.8 JH112                    145951789107603200 15.54  8.17  7.37  7.37  3.93  7.66  3.45 1, 2  2.2054                        member      yes   3.6  -0.63 II   yes     single no  no  yes no  no  no  no  no  
+247589803 043249.38+225308.2 2MASSJ04324938+2253082   145951789107603072        9.20        8.99  3.33  8.77  5.65 4, 2                                member      yes   4.5  -0.55 II                  no  no  no  no  no  no  no  no  
+247794491 043250.26+242211.5 2MASSJ04325026+2422115   147801270743616896       11.28       12.55  3.67 10.81  8.88 6, 2  3.8541                        member      yes   4.5  -2.31 III          single no  no  no  no  no  no  no  no  
+247791556 043301.97+242100.0 2MASSJ04330197+2421000   147801339463632000 17.95  9.73  8.23  8.23  0.85  9.62  7.38 1, 2  1.0261  1.0469                member      no         -2.50 III          multi  no  no  yes yes yes yes no  no  
+247763883 043306.21+240933.9 V*GHTau                  147778284078308096 13.20  7.79  5.41  5.41  0.91  7.68  4.50 1, 2  2.4937  2.9408                member      yes   4.5  -1.04 II   yes     multi  no  no  yes no  no  yes no  no  
+247764745 043306.62+240954.9 V*V807Tau                147778490237623808 11.21  6.96  4.25  4.25  0.63  6.88  3.62 1, 2  4.3784                        member      yes   4.5  -1.34 II   yes     single no  no  yes no  no  no  no  no  
+248060724 043307.81+261606.6 [BLH2002]KPNO-Tau14      151130591952773632 20.74 10.27 10.47 10.47  3.09  9.87  7.38 1, 2  1.8637                        member      no         -2.52 III          single yes no  no  no  no  no  no  no  
+247575958 043309.45+224648.7 2MASSJ04330945+2246487   145947077527182848       11.55        9.29  1.91 11.30  7.38 4, 2  3.4916                        member      yes   3.6  -1.58 II   yes     single no  no  yes no  no  no  no  no  
+247822311 043310.03+243343.2 WK812                    147831571737487488 12.08  8.42  3.66  3.66  0.01  8.42  3.64 1, 2  2.7412                        member      no         -2.81 III          single no  no  no  no  no  no  no  no  
+248057096 043314.35+261423.5 IRASS04301+2608          151130317074279552       12.50       10.74  6.78 11.62  3.96 3, 2 11.7495                        member      yes   4.5   1.00 I            single no  no  yes no  no  no  no  no  
+247590222 043316.50+225320.3 IRAS04302+2247                                    11.72       11.80  7.10 10.80  4.70 6, 1                                member      yes   3.6  -0.01 flat                no  no  no  no  no  no  no  no  
+247575425 043319.07+224634.1 IRAS04303+2240           145196527698016512        7.67       10.75  6.66  6.82  4.09 3, 2                                member      yes   k    -0.60 II           single no  no  yes no  no  no  no  no  
+247573157 043326.21+224529.3 2MASSJ04332621+2245293   145196252820109440        9.92        9.51  4.28  9.37  5.23 4, 2  9.5320                        member      yes   4.5  -2.37 III          single yes yes yes no  no  no  no  no  
+247027353 043327.89+175843.6 2MASSJ04332789+1758436  3314243782049750144       11.99       10.27  4.42 11.42  5.85 3, 1                                member      yes   k    -0.01 flat     yes        no  no  no  no  no  no  no  no  
+247030920 043332.81+180043.6 2MASSJ04333278+1800436  3314244366165299584        9.60        5.28  1.06  9.47  4.22 3, 2                                member      yes   4.6  -0.67 II                  no  no  no  no  no  no  no  no  
+247031423 043333.04+180100.1 HD28867                 3314244361868724224  7.01  5.79  1.23  1.23  1.35  5.61 -0.12 1, 2  3.0978  3.2775                member      yes   9    -2.03 III          single no  no  yes yes yes yes no  no  
+247792225 043334.06+242117.0 V*GITau                  147790202612482560 13.70  7.89  5.81  5.81  1.75  7.66  4.06 1, 2  7.1334                        member      yes   3.6  -0.49 II           single no  no  yes no  no  no  no  no  
+247791801 043334.56+242105.8 V*GKTau                  147790206908395776 13.00  7.47  5.53  5.53  1.95  7.22  3.58 1, 2  4.6165                        member      yes   3.5  -0.67 II   yes     single no  no  no  no  no  no  no  no  
+248047443 043336.83+260949.3 V*ISTau                  151125919028356352        8.64        7.23  3.27  8.22  3.96 3, 2  7.6020                        member      yes   3.5  -0.86 II   yes     single no  no  yes no  no  no  no  no  
+247534022 043339.05+222720.7 2MASSJ04333905+2227207   145081590077487360       10.71       10.02  5.59  9.99  4.43 3, 2 13.1218                        member      yes   3.5  -0.60 II           single no  no  yes no  no  no  no  no  
+247072566 043341.99+182427.3 V*V1323Tau              3314295081138950784 11.75  9.27  2.48  2.48  0.62  9.19  1.86 1, 2  2.1811  2.2688                cand.~memb. no         -2.73 III          multi  no  no  no  yes no  yes no  no  
+247950452 043342.91+252647.0 2MASSJ04334291+2526470   148017561002336384       13.33        7.07  1.84 13.09  5.22 4, 1  0.7269                        member      maybe 8    -2.15 III          single no  no  no  no  no  no  no  no  
+248058354 043344.65+261500.5 2MASSJ04334465+2615005   151129011404806912        9.74       10.09  4.01  9.23  6.08 4, 2  5.8335                        member      yes   3.5  -0.89 II           single yes no  yes no  no  no  no  no  
+247047380 043348.73+181009.9 V*DMTau                 3314282402395528192 14.00  9.52  4.48  4.48  0.00  9.52  4.48 1, 1  7.4081                        member      yes   8    -0.60 II       yes single no  no  yes no  no  no  no  no  
+247584113 043352.01+225030.1 CITau                    145203159127518336        7.79        5.83  2.39  7.49  3.45 3, 2  9.0335  6.6224                member      yes   3.5  -0.76 II       yes multi  no  no  yes no  no  yes no  no  
+248053986 043352.45+261254.8 2MASSJ04335245+2612548   151127911893054464       13.99        9.76  0.35 13.95  9.41 4, 2                                member      yes   3.5  -0.73 II                  no  no  no  no  no  no  no  no  
+247596872 043352.53+225626.9 2MASSJ04335252+2256269                             9.11        7.23  0.17  9.09  7.06 4, 2  1.4085  4.0958                member      maybe 4.6  -2.59 III          multi  yes no  no  no  no  no  yes no  
+247035365 043352.84+180316.5                         3314267593348429952        9.93        5.79  0.24  9.90  5.55 2, 1  2.5925  2.1349                member      yes   22   -2.30 III          multi  no  no  no  no  no  yes no  no  
+248055184 043354.75+261327.7 ITTauA                   151127907597788672        7.86        6.77  3.42  7.42  3.35 2, 2  2.7434                        member      yes   3.5  -1.14 II           single yes no  yes no  no  no  no  no  
+247097293 043355.47+183839.0 2MASSJ04335546+1838390                             9.61        5.24  0.15  9.59  5.09 2, 2  3.9347  4.6956                member      no         -2.59 III          multi  no  no  no  yes no  yes no  no  
+247786270 043406.19+241850.8 2MASSJ04340619+2418508   147786354323787008       13.07        9.71  0.43 13.01  9.28 3, 2  0.7113                        member      no         -2.24 III          single no  no  no  no  no  no  no  no  
+247586788 043410.99+225144.4 2MASSJ04341099+2251445   145203811962545152 15.19  9.43  5.76  5.76  1.40  9.25  4.36 1, 2  6.5373                        member      no         -2.66 III          single no  no  no  no  no  no  no  no  
+247584146 043415.27+225030.9 2MASSJ04341527+2250309   145203704587705088 23.43 11.85 11.58 11.58  4.20 11.31  7.38 1, 2  3.7261  3.1563                member      no         -2.42 III          multi  no  no  no  yes no  yes no  no  
+247664011 043419.88+232649.7 HD284530                 146008242157540480 10.20  8.24  1.96  1.96  2.01  7.98 -0.05 1, 2  0.2970  0.2880  0.3140 0.2699 cand.~memb. no         -2.71 III          multi  no  no  no  yes no  yes no  no  
+246963876 043431.28+172220.1 WISEJ043431.29+172219.9 3313455329134355456       10.23        5.79  0.35 10.19  5.44 3, 2                                member      yes   12   -1.18 II       yes        no  no  no  no  no  no  no  no  
+247622186 043445.44+230802.7 2MASSJ04344544+2308027   145982742935380096       11.70        7.43  1.02 11.57  6.40 4, 2  2.1734                        member      no         -2.42 III          single no  no  no  no  no  no  no  no  
+247810494 043455.41+242853.0 V*AATau                  147818450613367424 12.20  8.05  4.15  4.15  0.04  8.04  4.12 1, 2                                member      yes   3.5  -0.74 II                  no  no  no  no  no  no  no  no  
+247601658 043456.93+225835.7 2MASSJ04345693+2258358   145225596036660224        9.27        5.76  1.40  9.09  4.36 3, 2  2.0103                        member      maybe 22   -2.41 III          single no  no  yes no  no  no  no  no  
+246983144 043459.23+173338.1 Cl*Melotte25LH27        3313463953428629632 16.38  9.72  6.66  6.66  0.17  9.70  6.49 1, 1  1.6001  4.6744                member      no         -2.46 III          multi  no  no  no  no  no  no  yes no  
+247630187 043508.50+231139.8 2MASSJ04350850+2311398   145238687096970496 18.40 11.59  6.81  6.81  0.35 11.55  6.46 1, 1  1.4981                        member      no         -2.43 III          single no  no  no  no  no  no  no  no  
+246969828 043513.17+172549.7 Cl*Melotte25LH19        3313414750283302400 15.74 10.06  5.68  5.68  0.03 10.05  5.65 1, 2  1.0063  1.2995                member      no         -2.41 III          multi  no  no  no  no  no  yes no  no  
+247592507 043520.90+225424.2 FFTauAB                  145213875069914496        8.59        5.77  2.10  8.32  3.67 3, 2 21.5332  6.0010                member      no         -2.81 III          multi  no  no  yes no  no  no  yes no  
+247548866 043541.83+223411.5 [BLH2002]KPNO-Tau8       145133786815830784 19.26 11.98  7.28  7.28  0.22 11.96  7.06 1, 2  0.6878                        member      no         -2.50 III          single no  no  no  no  no  no  no  no  
+247588169 043542.03+225222.6 2MASSJ04354203+2252226   145212711134828672        9.99        7.59  1.72  9.77  5.87 4, 2  7.1457                        member      no               x            single no  no  yes no  no  no  no  no  
+247583818 043547.33+225021.7 V*HQTau                  145209618758377856 12.02  7.14  4.89  4.89  2.40  6.83  2.49 1, 2  2.4232  5.0249                member      yes   3.5  -0.56 II           multi  no  no  no  no  no  no  yes no  
+247588785 043551.09+225240.0 [BLH2002]KPNO-Tau15      145210099794710272       10.01        6.83  2.12  9.73  4.71 3, 2  4.9967                        member      no         -2.73 III          single no  no  no  no  no  no  no  no  
+247581233 043551.43+224911.9 [BLH2002]KPNO-Tau9       145209339585095424 24.92 14.19 10.73 10.73  1.19 14.03  9.54 1, 2  0.7424                        member      no         -0.79 II           single no  no  no  no  no  no  no  no  
+247593952 043552.09+225503.9 2MASSJ04355209+2255039   145213295250374016        9.81        7.81  2.15  9.53  5.65 4, 2  0.8537                        member      yes   12   -2.29 III          single no  no  no  no  no  no  no  no  
+247592463 043552.77+225423.1 V*HPTau                  145213187879627776 14.90  7.62  7.27  7.27  4.21  7.08  3.06 1, 2  4.3307                        member      yes   3.5  -0.46 II   yes     single no  no  yes no  no  no  no  no  
+247585120 043552.86+225058.5 2MASSJ04355286+2250585   145209442664192896        9.75        6.94  1.49  9.56  5.44 4, 2 27.2202                        member      no         -2.55 III          single no  no  yes no  no  no  no  no  
+247591948 043553.49+225409.0 CoKuHPTauG3              145213192171160064 14.80  8.80  6.00  6.00  1.89  8.55  4.12 1, 2  1.1976  1.2218                member      no         -2.54 III          multi  no  no  yes yes yes yes no  no  
+247592103 043554.15+225413.5 CoKuHPTauG2              145213192171159552 11.16  7.23  3.92  3.92  2.43  6.92  1.49 1, 2  1.1978  1.2220                member      maybe 24?? -1.98 III          multi  no  no  yes yes yes yes no  no  
+246938594 043555.68+170739.8                         3313386605360382720       10.14        5.84  0.28 10.11  5.57 2, 1  1.0839                        member      no         -2.26 III          single no  no  no  no  no  no  no  no  
+247592919 043556.84+225435.9 Haro6-28                 145213226530896896        9.53        8.26  3.76  9.05  4.50 3, 2                                member      yes   3.5  -0.82 II       yes        no  no  no  no  no  no  no  no  
+247591534 043557.60+225357.4 2MASSJ04355760+2253574   145210267297932416       13.64        7.25  1.60 13.43  5.65 4, 2  1.1984                        member      yes   4.5  -0.46 II           single no  no  no  no  no  no  no  no  
+247834416 043558.81+243840.3 WISEJ043558.82+243840.2  147727672184672640        9.79        5.98  1.20  9.63  4.78 3, 2  1.1845                        member      no         -2.73 III          single no  no  no  no  no  no  no  no  
+247558369 043558.92+223835.3 2MASSJ04355892+2238353   145157941711889536        8.37        4.32  0.65  8.29  3.67 3, 2  5.7728                        member      no         -2.65 III          single no  no  no  no  no  no  no  no  
+247558132 043559.49+223829.1 2MASSJ04355949+2238291   145157937416226176       13.15        6.94  2.72 12.80  4.22 3, 2                                member      yes   4.5   0.43 I                   no  no  no  no  no  no  no  no  
+247604448 043610.38+225956.0 2MASSJ04361038+2259560   145220064117853696 22.52 12.17 10.35 10.35  1.48 11.98  8.88 1, 2  2.9330                        member      no         -2.58 III          single no  no  no  no  no  no  no  no  
+247103541 043630.82+184215.3 HD285893                3410392015152613760 10.01  7.99  2.02  2.02  0.68  7.90  1.34 1, 2                                cand.~memb. yes   3.5  -0.25 flat yes            no  no  no  no  no  no  no  no  
+247600777 043638.93+225811.9 2MASSJ04363893+2258119   145217379763796992 21.65 12.37  9.29  9.29  0.21 12.34  9.08 1, 2  0.9645                        member      no         -2.32 III          single no  no  no  no  no  no  no  no  
+248131102 043721.75+265101.8 2MASSJ04372171+2651014   151499478104075008       10.39        5.34  0.11 10.37  5.23 2, 2  1.8415                        member      no         -2.63 III          single no  no  yes no  no  no  no  no  
+247673511 043737.05+233108.0 2MASSJ04373705+2331080                            15.44       10.32  0.52 15.37  9.80 4, 2                                member      yes   3.5  -1.19 II                  no  no  no  no  no  no  no  no  
+246776923 043739.54+152921.8                         3309889784723415168       10.05        5.26  0.00 10.05  5.26 2, 1  0.6375  0.5551  0.6255 0.1848 fgnd        no         -2.55 III          multi  no  no  no  yes no  yes yes no  
+247664986 043800.07+232716.7 2MASSJ04380007+2327167   146758796282263040       12.35        6.30  0.30 12.31  6.01 4, 1  0.5176  0.5753                fgnd        no         -2.30 III          multi  no  no  no  no  no  yes no  no  
+248023915 043800.83+255857.2 2MASSJ04380083+2558572   148420639387738112       10.10        9.42  0.75 10.00  8.67 4, 2  0.6644  1.0263                member      maybe 4.6  -2.53 III          multi  no  no  no  yes no  no  yes no  
+247280905 043813.04+202247.0 V*V1325Tau              3411215210060678784 12.22  9.36  2.86  2.86  0.37  9.31  2.49 1, 2  3.9332  2.9233 11.7995        cand.~memb. no         -2.85 III          multi  yes yes yes no  no  yes yes no  
+248051303 043814.86+261139.9 2MASSJ04381486+2611399   148450875956969344       12.98       10.31  1.64 12.77  8.67 3, 2  5.9567                        member      yes   k     0.01 flat     yes single no  no  yes no  no  no  no  no  
+247609913 043815.61+230227.5 V*V1117Tau               146675954953119104        9.77        3.99  0.49  9.71  3.50 2, 3  6.3887                        fgnd        no         -2.57 III          single no  no  yes no  no  no  no  no  
+247663697 043816.25+232640.3 2MASSJ04381630+2326402   146758968080949504       10.96        5.80  2.66 10.62  3.13 4, 1  1.2329                        member      no         -2.44 III          single no  no  no  no  no  no  no  no  
+248046139 043821.34+260913.7 V*GMTau                  148449845165337600 17.58 10.63  6.94  6.94  0.86 10.52  6.08 1, 2  2.6670                        member      yes   k    -0.86 II           single no  no  yes no  no  no  no  no  
+248049475 043828.58+261047.6 V*DOTau                  148449913884294528 12.30  7.30  5.00  5.00  0.78  7.20  4.22 1, 2                                cand.~memb. yes   3.6  -0.49 II       yes        no  no  no  no  no  no  no  no  
+248049115 043835.28+261036.8 HVTauAB                  148450085683504896        7.91        6.83  2.61  7.57  4.22 2, 2  4.5088                        cand.~memb. no         -1.54 II           single no  no  no  no  no  no  no  no  
+246802443 043838.85+154604.5                         3309970392669539584       10.08        4.72  0.00 10.08  4.72 3, 1                                member      no         -2.66 III                 no  no  no  no  no  no  no  no  
+246802680 043839.06+154613.6 HD285957                3309970392669539200 10.86  8.24  2.62  2.62  0.30  8.20  2.32 1, 2  3.0868                        member      no         -2.80 III          single no  no  yes no  no  no  no  no  
+246990243 043845.01+173743.3 2MASSJ04384502+1737433  3409319239697943296       10.82        4.75  0.96 10.70  3.79 2, 1  2.5169                        member      yes   4.6  -0.99 II       yes single no  no  yes no  no  no  no  no  
+246989752 043847.25+173726.0 2MASSJ04384725+1737260  3409319342777158272       11.75        6.35  0.72 11.66  5.63 3, 1  1.6197                        member      yes   4.6  -1.01 II   yes     single no  no  yes no  no  no  no  no  
+247657780 043858.71+232359.5 2MASSJ04385871+2323595   146709146460303744       11.60        6.57  0.46 11.54  6.11 4, 4  0.6640                        member      no         -2.32 III          single no  no  no  no  no  no  no  no  
+247991214 043903.95+254426.4 2MASSJ04390396+2544264   148354733113981696       11.37        8.60  2.10 11.10  6.49 4, 1  3.1401                        member      yes   4.6  -0.88 II           single no  no  no  no  no  no  no  no  
+247520207 043917.78+222103.2 EM*LkCa15                144936836795636864 12.03  8.16  3.87  3.87  0.42  8.11  3.45 1, 2  5.7795                        member      yes   3.5  -0.95 II   yes     single no  no  yes no  no  no  no  no  
+247992574 043920.92+254502.0 V*GNTau                  148378033312276864        8.06        7.66  3.02  7.67  4.64 2, 2  5.7452                        member      yes   3.5  -0.92 II           single no  no  no  no  no  no  no  no  
+248030407 043944.88+260152.7 IRASF04366+2555          148400229703257856        8.95        8.90  2.82  8.59  6.08 4, 2  3.4525                        member      yes   5.8  -0.87 II   yes     single no  no  yes no  no  no  no  no  
+248029954 043947.48+260140.7 2MASSJ04394748+2601407   148400156688543104 21.56 10.33 11.22 11.22  2.75  9.98  8.47 1, 2  2.9502                        member      yes   3.5  -0.75 II       yes multi  no  no  yes no  no  no  no  no  
+247420766 043950.73+213356.3 2MASSJ04395073+2133563  3411439437418190080       13.43        6.97  0.69 13.35  6.28 4, 1  1.1906                        fgnd        no         -2.08 III          single no  no  no  no  no  no  no  no  
+247992575 043955.74+254502.0 IRAS0437+257P08          148374391180009600        6.28       14.81 13.12  4.59  1.69 6, 1                                member      yes   k    -0.53 II                  no  no  no  no  no  no  no  no  
+248038058 044008.00+260525.3 IRAS04370+2559           148401565437820928        8.87       13.27 10.32  7.54  2.95 6, 1                                member      yes   k    -0.33 II       yes        no  no  no  no  no  no  no  no  
+247932205 044039.79+251906.1 2MASSJ04403979+2519061   148141775750936960       10.24        8.98  2.57  9.91  6.40 4, 2  0.9391  0.8483                member      yes   22   -1.86 III          multi  no  no  no  yes no  yes no  no  
+248006676 044049.50+255118.9 2MASSJ04404950+2551191   148381984682184192 15.50  9.49  6.01  6.01  1.28  9.33  4.72 1, 2  3.3156                        member      yes   5.8  -1.14 II   yes     single no  no  yes no  no  no  no  no  
+247343526 044053.40+205547.1 2MASSJ04405340+2055471  3411342134934571520       11.62        6.42  0.34 11.58  6.08 3, 2  0.3567                        cand.~memb. no         -2.48 III          single no  no  no  no  no  no  no  no  
+248021602 044104.25+255755.5 Haro6-32                 148384527302822272        9.95        6.60  0.52  9.89  6.08 4, 2  2.0980  1.7255                member      no         -2.62 III          multi  no  no  yes no  no  yes no  no  
+247864498 044104.71+245106.1 V*IWTau                  148063641705483776 12.60  8.27  4.32  4.32  0.13  8.26  4.19 1, 2  5.5013  7.0425                member      no         -2.73 III          multi  no  no  no  yes no  yes no  no  
+248017479 044108.26+255607.4 ITG33                    148384179410294272       11.09       10.21  5.43 10.39  4.78 3, 2  6.6824                        member      yes   k    -0.35 II           single no  no  yes no  no  no  no  no  
+248015397 044110.78+255511.6 ITG34                    148196510814073728       11.44        8.92  2.19 11.16  6.73 4, 2  3.9048  2.8183                member      yes   3.5  -0.92 II   yes     multi  no  no  yes no  no  yes no  no  
+248018164 044138.82+255626.7 Haro6-33                 148289831863907840 18.40  9.20  9.20  9.20  5.24  8.53  3.96 1, 2                                member      yes   3.5   0.06 flat yes            no  no  no  no  no  no  no  no  
+247968420 044148.25+253430.4 2MASSJ04414825+2534304   148172179824515968       12.22        8.14  3.19 11.81  4.95 4, 1  2.9144                        member      yes   3.5  -0.47 II           single no  no  yes no  no  no  no  no  
+248145565 044155.15+265849.4 HD283798                 148599305732728320  9.55  7.97  1.58  1.58  0.09  7.96  1.49 1, 2  0.9831  0.9658                fgnd        no         -2.84 III          multi  no  no  yes yes no  yes no  no  
+247941378 044205.49+252256.8 V*V999Tau                148116246465275520 14.70  8.23  6.47  6.47  2.38  7.92  4.09 1, 2  4.9052  2.6515                member      yes   12   -2.32 III          multi  no  no  no  yes no  no  yes no  
+247941613 044207.33+252303.2 V*V1000Tau               148116177745403776 15.01  7.95  7.07  7.07  2.42  7.63  4.64 1, 2  2.1764  8.2537                member      no         -1.04 II           multi  no  no  yes no  no  no  yes no  
+247941930 044207.77+252311.7 EM*LkHA332               148116276529733120        7.94        8.87  5.25  7.27  3.62 3, 2                                member      yes   3.6  -0.90 II       yes        no  no  no  no  no  no  no  no  
+247935696 044221.01+252034.3 2MASSJ04422101+2520343   148112913570653568       10.17        7.01  1.14 10.02  5.87 4, 2  1.8945                        member      yes   4.6  -0.45 II           single no  no  yes no  no  no  no  no  
+247923794 044237.69+251537.2 V*DPTau                  148099749495579648 13.70  8.76  4.94  4.94  0.77  8.66  4.17 1, 2  3.6623                        member      yes   3.5  -0.24 flat         single no  no  yes no  no  no  no  no  
+246877387 044302.45+163156.1                         3310070620026884864        9.97        5.40  0.46  9.91  4.94 2, 4  8.9878  0.9759                member      no         -2.52 III          multi  no  no  no  yes no  no  yes no  
+247935061 044303.07+252018.7 V*GOTau                  148106316500918272 14.40  9.33  5.07  5.07  0.48  9.27  4.58 1, 2                                member      yes   4.5  -0.80 II                  no  no  no  no  no  no  no  no  
+247597352 044354.00+225639.8 HD29935                  146515941651926912  6.92  6.84  0.08  0.08  0.04  6.84  0.04 1, 2  0.3453                        cand.~memb. no         -2.64 III          single no  no  no  no  no  no  no  no  
+246859790 044401.64+162132.4 2MASSJ04440164+1621324  3406128761895775872       12.38        6.76  1.33 12.21  5.43 4, 3  2.1720                        member      yes   4.5  -0.93 II   yes     single no  no  yes no  no  no  no  no  
+247225984 044426.85+195216.9 V*V1333Tau              3410191732238414592 12.55  8.71  3.84  3.84  0.44  8.65  3.40 1, 3 12.9213                        cand.~memb. no         -2.69 III          single no  no  yes no  no  no  no  no  
+247915927 044427.13+251216.4 IRASS04414+2506          147441558642852736       10.76        7.23  0.46 10.70  6.77 4, 4  4.4300                        member      yes   3.5  -0.30 flat         single yes no  yes no  no  no  no  no  
+248180268 044454.45+271745.2 HD283782                 154586318344905216  9.80  7.15  2.65  2.65  0.33  7.11  2.32 1, 2  0.4650  0.3214  2.0182        member      no         -2.79 III          multi  no  no  no  no  no  yes yes no  
+246925324 044653.06+170000.0 V*DQTau                 3406269842981827712 12.00  7.98  4.02  4.02  3.43  7.54  0.59 1, 1  3.0331 15.5731                member      yes   3.5  -0.61 II       yes multi  no  no  yes no  no  no  yes no  
+246929818 044658.97+170237.8 Haro6-37A               3406270362673331072        7.31        6.22  2.55  6.98  3.67 2, 2 10.7482                        member      yes   3.5  -0.93 II   yes     single no  no  yes no  no  no  no  no  
+246923113 044706.20+165842.8 V*DRTau                 3406081865148861440 10.50  6.87  3.63  3.63  0.09  6.86  3.54 1, 2 14.5698                        member      yes   3.5  -0.64 II       yes single no  no  yes no  no  no  no  no  
+246942684 044712.47+170957.9                         3406273695567950592       10.19        5.99  0.76 10.09  5.23 2, 2  6.2802                        member      no         -2.57 III          single no  no  no  no  no  no  no  no  
+246931542 044841.89+170337.4 2MASSJ04484189+1703374  3406087053469332352       12.49        7.50  0.69 12.40  6.82 4, 3  0.7864  0.8418                member      no         -2.45 III          multi  no  no  no  no  no  yes no  no  
+246780678 044957.13+153151.8 HD30633                 3405031762825209344  7.76  7.20  0.56  0.56  0.33  7.16  0.23 1, 2  0.4118  0.0542                fgnd        no         -2.79 III          multi  no  no  no  no  no  no  yes no  
+247539775 045000.19+222957.4 V*V1341Tau              3412878010943270784 11.28  8.89  2.40  2.40  0.08  8.88  2.32 1, 2  0.9165                        fgnd        no         -2.68 III          single no  no  yes no  no  no  no  no  
+246977631 045230.75+173025.7 V*V1346Tau              3406444051151221504 12.02  9.25  2.77  2.77  0.49  9.19  2.27 1, 3  4.6167                        cand.~memb. no         -2.78 III          single no  no  yes no  no  no  no  no  
+246942563 045423.68+170953.4 2MASSJ04542368+1709534  3405690061051973760 13.50  9.79  3.71  3.71  0.00  9.79  3.71 1, 1  5.2074                        cand.~memb. yes   12   -1.14 II   yes     single no  no  yes no  no  no  no  no  
+247076294 045509.62+182631.1 HD31281                 3406664365793560320  9.14  7.61  1.53  1.53  0.11  7.59  1.42 1, 2  0.6771  0.7999                fgnd        no         -2.80 III          multi  no  no  no  yes no  yes no  no  
+246997643 045547.67+174201.8 V*V1350Tau              3406553280759703168 11.36  8.57  2.79  2.79  0.04  8.56  2.75 1, 2  8.2265                        fgnd        no         -2.85 III          single no  no  yes no  no  no  no  no  
+246815623 045613.57+155421.9 V*V1351Tau              3404930023639393920 12.77  9.33  3.44  3.44  0.05  9.32  3.39 1, 3  5.6313                        cand.~memb. no         -2.59 III          single no  no  yes no  no  no  no  no  
+246760205 045700.64+151753.1 HD286179                3392859619349705216 10.39  8.46  1.93  1.93  0.35  8.42  1.58 1, 2  3.1297                        fgnd        no         -2.81 III          single yes yes yes no  no  no  no  no  
+246770655 045717.65+152509.4 WDSJ04573+1524AB        3392887171563820288        7.75        2.48  0.16  7.73  2.32 2, 2  1.7013  2.3551                cand.~memb. no         -2.64 III          multi  no  no  no  no  no  yes no  no  
+246791024 045807.08+153840.0 HD286269                3392898819515122816 11.08  8.83  2.25  2.25  0.91  8.71  1.34 1, 2  1.5651                        fgnd        no         -2.66 III          single no  no  yes no  no  no  no  no  
+246682490 045904.70+142055.9 UCAC4522-009859         3392553852037339776 14.63  9.47  5.16  5.16  0.16  9.45  5.00 1, 2  3.6319  0.4377                cand.~memb. no         -2.62 III          multi  no  no  no  no  no  no  yes no  
+246676629 045928.41+141623.8 UCAC4522-000989         3392549449695395968 15.52 10.06  5.46  5.46  0.45 10.00  5.00 1, 2  0.6255                        cand.~memb. no         -2.55 III          single no  no  yes no  no  no  no  no  
+246695532 045946.17+143055.4 V*V1840Ori              3392562712554107392 11.65  8.95  2.70  2.70  0.15  8.93  2.56 1, 3  5.3430                        cand.~memb. no         -2.76 III          single yes yes yes no  no  no  no  no  
+246742340 050024.31+150525.2 HD31950                 3392806018157943040  9.80  8.38  1.42  1.42  0.05  8.37  1.37 1, 2  1.9658  2.0936                fgnd        no         -2.79 III          multi  no  no  no  yes no  yes no  no  
+246966664 050030.05+172359.1 2MASSJ05003003+1723591  3405561727429486592 11.85  9.31  2.54  2.54  0.77  9.21  1.77 1, 2  3.0538                        fgnd        no         -2.72 III          single yes yes yes no  no  no  no  no  
+247890584 050101.17+250141.3                         3419631520599185664        9.84        4.53  0.00  9.84  4.53 2, 1  8.5164                        cand.~memb. yes   22   -2.22 III          single no  no  yes no  no  no  no  no  
+247885481 050239.85+245933.8 2MASSJ05023985+2459337  3419944920068400000       10.78        5.56  0.12 10.76  5.44 2, 2  2.9882                        cand.~memb. yes   4.6  -0.91 II   yes     single no  no  yes no  no  no  no  no  
+247715356 050317.28+234917.4 HD32318                 3418686666450615936  8.54  7.69  0.85  0.85  0.66  7.60  0.19 1, 2  0.1897  0.3875  2.1188        cand.~memb. yes   9    -2.32 III      yes multi  no  no  no  no  no  no  yes no  
+247289708 052101.29+202733.1                         3401886433718316416       10.51        3.84  0.00 10.50  3.84 2, 1  2.2057                        fgnd        maybe 22:  -2.29 III          single no  no  no  no  no  no  no  no  

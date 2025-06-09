@@ -1,0 +1,702 @@
+Title: Rotation of Low-Mass Stars in Taurus with K2 
+Authors: Rebull L.M., Stauffer J.R., Cody A.M., Hillenbrand L.A., 
+         Bouvier J., Roggero N., David T.J. 
+Table: Periods and Supporting Data for Taurus Likely Non-Members 
+       with K2 Light Curves
+================================================================================
+Byte-by-byte Description of file: ajab893ct4_mrt.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units Label     Explanations
+--------------------------------------------------------------------------------
+   1-  9 I9     ---   EPIC      EPIC identifier
+  11- 28 A18    ---   Coord     RA/DE coordinates (J2000); hhmmss.ss+ddmmss.s
+  30- 54 A25    ---   OName     Other target identifier
+  56- 74 A19    ---   Gaia      Gaia DR2 identifier
+  76- 80 F5.2   mag   Vmag      ? Apparent V band Vega magnitude
+  82- 86 F5.2   mag   Ksmag     Apparent Ks band Vega magnitude
+  88- 92 F5.2   mag   (V-Ks)o   ? Observed (V-Ks) color
+  94- 98 F5.2   mag   (V-Ks)u   Used (V-Ks) color (1)
+ 100-104 F5.2   mag   E(V-Ks)   Adopted (V-Ks) color excess (2)
+ 106-110 F5.2   mag   Ksmag0    Inferred dereddended Ks Vega magnitude (2)
+ 112-116 F5.2   mag   (V-Ks)0   Inferred dereddended (V-Ks) color (2,3)
+ 118-121 A4     ---   Uncert    Uncertainty code (4)
+ 123-129 F7.4   d     P1        ? Primary period (5)
+ 131-136 F6.4   d     P2        ? Secondary period 
+ 138-143 F6.4   d     P3        ? Tertiary period 
+ 145-150 F6.4   d     P4        ? Quaternary period 
+ 152-156 A5     ---   IRexcess  Presence of an IR excess; see S 4
+ 158-160 A3     ---   IRexStr   Minimum wavelength where IR excess is detected
+                                   (6)
+ 162-166 F5.2   ---   Slope     ? SED slope (7)
+ 168-171 A4     ---   Class     SED class; I, flat, II, or III
+ 173-178 A6     ---   sin/mult  Single or multi-period star flag
+ 180-182 A3     ---   dd        LC and power spectrum matches double-dip
+                                   characteristics (8)
+ 184-186 A3     ---   ddmove    LC and power spectrum matche moving double-dip
+                                   characteristics (8)
+ 188-190 A3     ---   shape     LC matches shape changer characteristics (8)
+ 192-194 A3     ---   beat      LC has beating visible (8)
+ 196-198 A3     ---   complex   Power spectrum has a complex, structured peak
+                                   and/or wide peak (8)
+ 200-202 A3     ---   closep    Power spectrum has resolved close peaks (8)
+ 204-206 A3     ---   distp     Power spectrum has resolved distant peaks (8)
+ 208-210 A3     ---   pulse     Power spectrum and LC match pulsator
+                                   characteristics (8)
+--------------------------------------------------------------------------------
+Note (1): Observed or inferred; see text.
+Note (2): See S 2.5.
+Note (3): Rounded to nearest 0.1 to emphasize the relatively low accuracy.
+Note (4): Two digit code denoting origin of (V-Ks)o and (V-Ks)0 (see S 2.3
+          and S 2.5). First digit (origin of (V-Ks)o):
+    1 = V measured directly from the literature (including SIMBAD)
+        and Ks from 2MASS;
+    2 = V from APASS and Ks from 2MASS;
+    3 = (V-Ks)o inferred from Gaia g and Ks from 2MASS (see S 2.3);
+    4 = (V-Ks)o inferred from Pan-STARRS1 g and Ks from 2MASS (see S 2.3);
+    5 = (V-Ks)o inferred from membership work (see S 2.2; rare);
+    6 = V inferred from well-populated optical SED and Ks from
+        2MASS (see S 2.3);
+   -9 = no measure of (V-Ks).
+
+          Second digit (origin of E(V-Ks) leading to (V-Ks)0):
+    1 = dereddening from JHKs diagram (see S 2.5);
+    2 = dereddening back to (V-Ks)0 expected for spectral type;
+    3 = used median E(V-Ks)=0.7 (see S 2.5);
+   -9 = no measure of E(V-Ks).
+Note (5): Taken to be rotation period in cases where there is > 1 period.
+Note (6): Or the limit of our knowledge of where there is no excess (see S 4).
+Note (7): Fit to all available detections between 2 and 25 um.
+Note (8): See S 6.2.
+--------------------------------------------------------------------------------
+210988095 032835.51+224712.7                             61891685623324544       12.66        5.24  0.26 12.63  4.98 3, 1                              no        -2.40 III         no  no  no  no  no  no  no  no 
+211001410 032910.85+225947.9                             61901959185068544       11.01        6.03  0.46 10.95  5.57 3, 4                              no        -2.50 III  single no  no  no  no  no  no  no  no 
+210937535 033044.08+215906.9                             61583822367267200       10.39        3.02  0.46 10.33  2.56 2, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+210790363 033149.65+194321.4 TYC1242-214-1               57676948316612224 12.16  9.52  2.64  2.64  0.46  9.46  2.18 1, 4                              no        -2.75 III  single yes no  yes no  no  no  no  no 
+211025018 033323.73+232205.6 HD21984                     67883714756349440  7.15  6.78  0.37  0.37  0.14  6.76  0.23 1, 2                              no        -2.91 III  multi  no  no  no  no  no  yes no  yes
+210707287 033416.01+182802.0                             56727588745441536       12.64        5.30  1.68 12.43  3.62 3, 1                              no        -2.21 III  multi  no  no  no  no  no  yes no  no 
+210891664 033447.52+211540.9                             58447602888136832       11.77        4.61  1.27 11.61  3.34 3, 1                              no        -2.49 III         no  no  no  no  no  no  no  no 
+210892398 033501.00+211622.5 EPIC210892398               58448942917930624       11.40        4.42  1.23 11.24  3.19 3, 1                              no        -2.55 III  single no  no  no  no  no  no  no  no 
+210765760 033601.79+192058.1 TYC1243-761-1               57171825802749952 10.41  8.59  1.82  1.82  0.46  8.53  1.36 1, 4                              no        -2.74 III  single no  no  no  no  no  no  no  no 
+210920334 033756.10+214233.2 HD22510                     64469490633933056  9.27  8.09  1.19  1.19  0.15  8.07  1.04 1, 3                              no        -2.76 III  single no  no  yes no  no  no  no  no 
+210822989 033916.74+201310.4                             57387639318952960       13.53        5.34  1.96 13.27  3.37 3, 1                              no        -2.22 III  single no  no  yes yes no  no  no  no 
+211067166 033922.06+240239.2 Cl*Melotte22BPL1            68223017172733056       13.38        5.36  0.00 13.38  5.36 3, 1                              no        -2.25 III         no  no  no  no  no  no  no  no 
+211057434 034036.18+235331.8 EPIC211057434               68160241930734208       11.88        5.42  0.00 11.88  5.42 3, 1                              no        -2.55 III  single no  no  no  no  no  no  no  no 
+210683735 034102.15+180801.0                             44832281681788544       13.04        5.17  0.00 13.04  5.17 3, 1                              no        -2.33 III         no  no  no  no  no  no  no  no 
+210822529 034157.75+201245.2                             63333450307866624       10.36        2.27  0.46 10.30  1.81 3, 4                              no        -2.74 III  single no  no  yes no  no  no  no  no 
+210993043 034205.46+225150.7                             65027595864799104       12.49        4.92  1.57 12.29  3.35 3, 1                              no        -2.84 III  single no  no  no  no  no  no  no  no 
+210764423 034250.14+191944.5                             57051532358523648       11.96        4.34  1.82 11.73  2.52 3, 1                              no        -2.92 III  single no  no  no  no  no  no  no  no 
+210701183 034257.49+182246.6 EPIC210701183               44821973760327040       11.06        4.33  0.46 11.00  3.87 2, 4                              no        -2.67 III  single no  no  no  no  no  no  no  no 
+210408447 034317.58+133934.0                             38214767870942208        9.59        3.85  0.46  9.53  3.39 2, 4                              no        -2.59 III  single no  no  yes no  no  no  no  no 
+210843635 034336.38+203202.7                             63368810775433856       11.38        4.54  0.46 11.32  4.08 3, 4                              no        -2.67 III  single no  no  no  no  no  no  no  no 
+210721755 034450.62+184052.5                             44926805322028160       10.54        4.58  1.61 10.33  2.97 2, 1                              no        -2.59 III         no  no  no  no  no  no  no  no 
+210390373 034600.15+131424.1                             37949781271643392        9.64        2.42  1.97  9.39  0.45 2, 1                              no        -2.54 III  single yes no  yes no  no  no  no  no 
+210915562 034602.31+213801.1                             63589159777315072       11.99        4.19  1.26 11.83  2.92 3, 1                              no        -2.56 III         no  no  no  no  no  no  no  no 
+210999052 034617.43+225733.6 EPIC210999052               64809445885616640        9.79        3.06  0.46  9.73  2.60 2, 4                              no        -2.77 III  single no  no  yes no  no  no  no  no 
+210694526 034655.57+181702.2 HD23586                     44700752603357568  8.93  7.71  1.22  1.22  0.49  7.65  0.73 1, 2                              yes   12  -2.51 III  multi  no  no  no  no  no  yes no  yes
+211072160 034716.56+240742.0 HD23608                     66715174415764736  8.72  7.49  1.23  1.23  0.22  7.46  1.01 1, 2                              no        -2.87 III  single no  no  yes no  no  no  no  no 
+210615625 034745.32+171106.8 HAT308-01039                43742042886976512        8.86        2.52  0.46  8.80  2.06 2, 4                              no        -2.70 III  single no  no  yes no  no  no  no  no 
+210425550 034803.39+140203.0                             39691721224880640       11.15        2.78  0.40 11.10  2.37 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+210895951 034810.58+211944.6 HD23734                     63705811090263040  7.96  7.42  0.54  0.54  0.14  7.40  0.40 1, 2                              no        -2.86 III  multi  no  no  no  no  no  yes no  yes
+211052103 034925.68+234831.0 Cl*Melotte22WCZ398          66501972240508032        9.27        2.39  0.00  9.27  2.39 2, 1                              no        -2.76 III  single yes yes yes no  no  no  no  no 
+210616528 034945.65+171154.4 EPIC210616528               43788467191226752       12.42        5.40  0.46 12.36  4.94 3, 4                              no        -2.36 III  single no  no  no  no  no  no  no  no 
+210750235 034959.72+190644.5                             50790500833628416       12.63        4.86  0.46 12.57  4.40 3, 4                              no        -2.68 III         no  no  no  no  no  no  no  no 
+211062937 035003.90+235834.1 Cl*Melotte22HHJ256          66510871412708480 17.30 12.52  4.78  4.78  1.50 12.32  3.29 1, 1                              no        -2.54 III         no  no  no  no  no  no  no  no 
+210821077 035004.01+201126.2                             51174329173532544        9.72        3.04  0.46  9.66  2.58 3, 4                              no        -2.74 III  single no  no  yes no  no  no  no  no 
+210361757 035004.57+123215.5                             37093747047545728       12.05        4.66  1.98 11.79  2.68 3, 1                              maybe 22  -1.80 III         no  no  no  no  no  no  no  no 
+210587542 035028.14+164659.9                             43484074268324992       12.23        4.78  0.16 12.21  4.62 3, 1                              no        -2.68 III  single no  no  yes no  no  no  no  no 
+210768535 035233.26+192326.4                             50886605021788160       11.08        4.27  1.44 10.90  2.83 2, 1                              no        -2.61 III         no  no  no  no  no  no  no  no 
+210754609 035252.02+191050.1 HD285234                    50827609351026816 10.88  9.00  1.88  1.88  0.51  8.94  1.37 1, 2                              no        -2.81 III  single yes no  yes no  no  no  no  no 
+210982092 035321.87+224142.8                             65583948749993216       11.04        3.13  0.46 10.98  2.67 2, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+211165691 035332.01+254347.6 HD24367                     67300698718051200  7.86  7.28  0.58  0.58  0.40  7.23  0.19 1, 2                              no        -2.80 III         no  no  no  no  no  no  no  no 
+210483025 035345.92+150718.8                             40063558016637184       14.73        4.18  0.13 14.72  4.05 3, 1                              no        -2.79 III         no  no  no  no  no  no  no  no 
+211100538 035412.83+243411.0 HD24454                     66623399554745984  9.70  8.37  1.33  1.33  0.15  8.35  1.19 1, 3                              no        -2.82 III  single no  no  yes no  no  no  no  no 
+210948451 035441.52+220935.0                             63820606976451840       11.66        4.50  1.26 11.49  3.23 3, 1                              no        -2.55 III         no  no  no  no  no  no  no  no 
+211048839 035509.42+234514.7                             65797082206293248       12.60        5.36  0.13 12.58  5.23 3, 1                              no        -2.40 III  single no  no  no  no  no  no  no  no 
+210640492 035528.28+173216.4                             49620689180767488       10.07        3.02  0.46 10.01  2.56 2, 4                              no        -2.77 III         no  no  no  no  no  no  no  no 
+211051964 035549.89+234822.7 Cl*Melotte22BPL332          65756468995702016       13.72        6.02  0.00 13.72  6.02 3, 1                              no        -2.20 III         no  no  no  no  no  no  no  no 
+210972857 035703.46+223301.2                             65355147251580672       13.01        4.78  0.17 12.99  4.61 3, 1                              no        -2.43 III         no  no  no  no  no  no  no  no 
+210981338 035808.13+224102.8                             65351603900932736       10.92        2.47  0.31 10.88  2.16 2, 1                              no        -2.77 III  single yes yes yes no  no  no  no  no 
+210756734 035837.98+191242.8                             50405839265156096       13.51        6.00  0.00 13.51  6.00 3, 1                              no        -2.29 III  multi  no  no  no  yes no  yes no  no 
+210803087 035839.36+195449.8                             50520673808214016       11.63        5.51  2.57 11.30  2.94 3, 1                              no        -2.42 III  single no  no  no  no  no  no  no  no 
+211192464 035909.37+261635.5                             67251942248273280       10.67        4.02  1.07 10.53  2.95 2, 1                              maybe 12: -1.93 III         no  no  no  no  no  no  no  no 
+210793045 035915.89+194548.9 EPIC210793045               50503906255772288       10.08        5.12  0.12 10.07  5.00 2, 2                              no        -2.60 III  single no  no  no  no  no  no  no  no 
+211085562 035930.06+242010.2 Cl*Melotte22AKIV-624        66161604670993024 11.34  8.67  2.67  2.67  0.00  8.67  2.67 1, 1                              no        -2.83 III  single no  no  yes no  no  no  no  no 
+210792668 035931.06+194529.1                             50503012902456960       11.78        4.80  2.80 11.42  1.99 3, 1                              no        -2.82 III         no  no  no  no  no  no  no  no 
+211182143 035942.04+260328.8                             67193079719647360       16.39        4.82  0.46 16.33  4.36 3, 4                              no        -4.04 III         no  no  no  no  no  no  no  no 
+210608165 035944.80+170445.9                             46504810666670208       11.16        5.45  1.32 10.99  4.13 3, 1                              no        -2.50 III  single no  no  no  no  no  no  no  no 
+211096281 040023.25+243011.3                             66188783224150144       13.98        5.83  0.68 13.89  5.15 3, 1                              yes   12  -1.69 III  single no  no  no  no  no  no  no  no 
+210425323 040034.91+140146.3                             38944087678109824       12.60        4.64  0.00 12.60  4.64 3, 1                              no        -2.37 III         no  no  no  no  no  no  no  no 
+210885955 040045.00+211022.8                             52990142565103872       11.28        4.60  0.00 11.28  4.60 2, 1                              no        -2.63 III         no  no  no  no  no  no  no  no 
+210893410 040054.82+211721.1                             52997834848982656       13.69        4.20  0.46 13.63  3.74 6, 4                              yes   12  -1.84 III         no  no  no  no  no  no  no  no 
+211086257 040104.96+242051.1                             65995269177456000       11.95        4.79  0.46 11.89  4.33 3, 4                              no        -2.65 III         no  no  no  no  no  no  no  no 
+210906231 040135.27+212913.5 TYC1262-824-1               53027285442209536 11.83  8.82  3.01  3.01  0.46  8.76  2.55 1, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+210547200 040137.83+161021.6                             46193507140160384       10.49        2.20  0.46 10.43  1.74 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+211151436 040143.26+252738.7                             66398274549007744       12.16        4.91  1.29 12.00  3.62 3, 1                              no        -2.48 III         no  no  no  no  no  no  no  no 
+211041372 040206.18+233754.0                             65879579938647296       13.08        5.70  1.24 12.92  4.46 3, 1                              no        -2.43 III         no  no  no  no  no  no  no  no 
+211094364 040243.01+242824.0                             66082233676302848       10.68        4.33  0.46 10.62  3.87 2, 4                              no        -2.61 III         no  no  no  no  no  no  no  no 
+211123198 040246.24+245649.7 TYC1817-640-1               66299554722512768 10.35  8.74  1.61  1.61  0.46  8.68  1.15 1, 4                              no        -2.71 III  multi  no  no  no  no  no  no  yes no 
+210357078 040306.16+122452.7 HD286428                  3304975139546295296  9.98  8.41  1.57  1.57  0.20  8.38  1.37 1, 2                              no        -2.86 III  single yes no  yes no  no  no  no  no 
+210594569 040314.58+165310.7 HD285384                    46380875090801792 11.48  9.82  1.66  1.66  0.46  9.76  1.20 1, 4                              no        -2.54 III  single no  no  no  no  no  no  no  no 
+210527925 040323.82+155209.4                             45417836046771200       12.27        4.91  0.00 12.27  4.91 3, 1                              no        -2.55 III  single no  no  yes no  no  no  no  no 
+210429153 040333.26+140633.3 HD286480                    38912511078585984 11.51  9.34  2.17  2.17  0.54  9.27  1.63 1, 3                              no        -2.74 III  single yes yes yes no  no  no  no  no 
+210362818 040346.71+123352.5                           3304983832560084352        9.86        2.80  0.98  9.73  1.82 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+210811353 040354.57+200225.4 TYC1258-232-1               50570083112602496        9.64        2.47  0.46  9.58  2.01 2, 4                              no        -2.68 III         no  no  no  no  no  no  no  no 
+210349838 040359.56+121301.0                           3304780319829815680       11.63        4.76  1.21 11.47  3.55 3, 1                              no        -2.65 III  single no  no  no  no  no  no  no  no 
+210388197 040429.42+131121.9 TYC665-259-1              3305395221705707776 11.58  9.94  1.64  1.64  0.36  9.90  1.28 1, 1                              no        -2.79 III  multi  no  no  no  no  no  yes yes no 
+210941293 040439.47+220243.5 TYC1262-406-1               53163659241318144  9.93  8.42  1.51  1.51  0.14  8.40  1.37 1, 2                              no        -2.79 III         no  no  no  no  no  no  no  no 
+210602466 040444.04+170003.7 HD285381                    46408397241190400 11.40  9.66  1.74  1.74  0.40  9.61  1.34 1, 2                              no        -2.46 III  single no  no  yes no  no  no  no  no 
+210817186 040512.77+200748.8                             51884824140206720        8.95        3.69  0.46  8.89  3.23 2, 4                              no        -2.65 III  single no  no  no  no  no  no  no  no 
+211051489 040513.18+234753.2 TYC1814-715-1               53896518103817344 10.21  8.62  1.59  1.59  0.46  8.56  1.13 1, 4                              no        -2.76 III         no  no  no  no  no  no  no  no 
+211051435 040515.37+234750.0 HD25669                     53896621183031552  8.26  7.06  1.20  1.20  0.54  6.99  0.66 1, 3                              no        -2.85 III  single no  no  no  no  no  no  no  no 
+210805757 040536.75+195718.0 HD25720                     51867472472476800  8.30  7.18  1.12  1.12  0.03  7.18  1.09 1, 1                              no        -2.83 III  single no  no  yes no  no  no  no  no 
+210774656 040541.89+192900.1                             50299981209081088       13.40        2.65  0.46 13.34  2.19 2, 4                              no        -1.62 III  multi  no  no  no  yes no  yes no  no 
+210366991 040610.41+124015.0                           3305176070999293696       11.06        2.44  1.91 10.81  0.53 2, 1                              no        -2.72 III  single no  no  yes no  no  no  no  no 
+210783290 040611.69+193654.5                             50308433704682112       11.02        3.92  0.00 11.02  3.92 3, 1                              no        -2.66 III  single no  no  no  no  no  no  no  no 
+210416145 040620.20+134951.8                           3305585334139105536       11.15        4.53  1.49 10.96  3.04 2, 1                              no        -2.53 III         no  no  no  no  no  no  no  no 
+210545941 040630.34+160913.7                             45531021320853120       11.65        4.88  0.97 11.52  3.91 2, 1                              no        -2.45 III  single yes no  no  no  no  no  no  no 
+210951696 040641.39+221241.1                             53498116936163968       12.03        5.13  0.38 11.99  4.75 3, 1                              no        -2.50 III         no  no  no  no  no  no  no  no 
+210926530 040756.28+214837.2                             52347890334324736       12.23        4.97  0.46 12.17  4.51 3, 4                              no        -2.39 III  single no  no  no  no  no  no  no  no 
+210863038 040756.72+204926.4                             52028172968241152       12.29        4.80  0.46 12.23  4.34 3, 4                              no        -2.61 III         no  no  no  no  no  no  no  no 
+210805120 040812.98+195639.2 V*V1196Tau                  51832421242688128        9.32        3.75  1.26  9.16  2.49 2, 2                              no        -2.61 III         no  no  no  no  no  no  no  no 
+210397036 040901.57+132353.8 HD26171                   3305320283117017856  5.93  5.57  0.35  0.35  0.40  5.52 -0.05 1, 2                              no        -2.84 III  single yes no  no  no  no  no  no  no 
+210744326 040916.50+190122.2                             47212586916738176       11.75        5.80  0.46 11.69  5.34 3, 4                              no        -1.81 III  multi  no  no  no  yes no  yes no  no 
+210796402 040922.20+194852.3                             48824505322369920       11.45        4.82  0.00 11.45  4.82 3, 1                              yes   22  -1.95 III         no  no  no  no  no  no  no  no 
+210879553 040924.33+210424.2                             52060642920946688        9.19        3.71  0.46  9.13  3.25 2, 4                              no        -2.65 III  single yes yes yes no  no  no  no  no 
+210883077 040929.69+210743.5                             52063116822102656       10.24        3.95  0.00 10.24  3.95 2, 1                              no        -2.65 III  single no  no  no  no  no  no  no  no 
+210760764 040939.58+191627.3                             48721219948959744       10.57        3.90  1.24 10.41  2.66 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+210955775 041105.70+221631.3 WISEJ041105.70+221631.2     52751101863760256       10.08        5.06  0.05 10.07  5.00 2, 2                              no        -2.54 III  multi  no  no  no  yes no  no  yes no 
+210381646 041130.74+130200.6                           3305256683241481472       11.90        4.41  1.71 11.68  2.70 2, 1                              no        -2.39 III         no  no  no  no  no  no  no  no 
+210820979 041134.05+201121.4                             48933975448837632       12.21        6.12  2.02 11.95  4.10 3, 1                              no        -2.47 III  multi  no  no  no  yes no  no  yes no 
+210967196 041205.11+222725.8                             52849233277199872       11.39        4.05  1.85 11.15  2.20 2, 1                              no        -2.64 III         no  no  no  no  no  no  no  no 
+211047546 041218.93+234357.8 HD284161                   149770221193005696 10.09  8.40  1.69  1.69  0.34  8.36  1.34 1, 3                              no        -2.91 III         no  no  no  no  no  no  no  no 
+210976916 041231.37+223651.7                             52857509676873984       13.15        5.77  0.46 13.09  5.31 3, 4                              no        -2.37 III         no  no  no  no  no  no  no  no 
+211034857 041241.48+233131.5                            149751112881211264        9.96        3.01  0.00  9.96  3.01 2, 1                              no        -2.77 III  single no  no  yes no  no  no  no  no 
+210966392 041253.73+222638.2                             52804531257705088       10.05        3.47  0.92  9.93  2.55 2, 1                              no        -2.72 III  single no  no  no  no  no  no  no  no 
+210447206 041320.68+142804.4                           3311506028159832576        9.58        3.00  0.61  9.50  2.38 2, 1                              no        -2.72 III  multi  no  no  no  no  no  no  yes no 
+211095070 041347.50+242902.8                            149973459045135488       12.10        4.70  1.23 11.94  3.47 3, 1                              no        -2.50 III         no  no  no  no  no  no  no  no 
+210388426 041434.75+131140.9 TYC679-205-1              3310505854831227904 12.04  9.19  2.85  2.85  2.68  8.85  0.17 1, 1                              no        -2.74 III  multi  no  no  no  no  no  no  yes no 
+210503288 041448.39+152803.4                           3312187111189385088       12.53        4.93  1.72 12.31  3.20 3, 1                              no        -2.22 III  single no  no  no  no  no  no  no  no 
+210439350 041516.16+141856.4                           3311438721728209280       11.15        4.52  0.46 11.09  4.06 2, 4                              no        -2.59 III  single no  no  no  no  no  no  no  no 
+210995937 041536.76+225440.1                            148908307155781248       10.78        2.41  0.47 10.72  1.93 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+211005367 041602.68+230334.5                            148927479889743872       11.44        4.73  0.46 11.38  4.27 3, 4                              no        -2.54 III  single no  no  no  no  no  no  no  no 
+210475682 041602.94+145940.2                           3311551524749152640       12.42        5.27  1.63 12.21  3.64 3, 1                              no        -2.30 III  single no  no  no  no  no  no  no  no 
+211038811 041618.90+233526.3                            149019117311853440       12.07        4.97  0.00 12.07  4.97 3, 1                              no        -2.43 III  single no  no  no  no  no  no  no  no 
+210449928 041641.74+143113.8                           3311471943298873088        9.67        3.21  0.46  9.61  2.75 2, 4                              no        -2.77 III         no  no  no  no  no  no  no  no 
+211060365 041734.21+235614.4                            149124945306289792       12.05        4.94  0.00 12.05  4.94 3, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+210511770 041752.03+153624.1 Cl*Melotte25LH237         3312161135227206272 19.14 12.65  6.49  6.49  0.00 12.65  6.49 1, 1                              no        -2.64 III  single no  no  no  no  no  no  no  no 
+210411201 041909.04+134314.1 HD27296                   3310598213808461952  7.75  6.67  1.08  1.08  0.09  6.66  0.99 1, 2                              no        -2.85 III         no  no  no  no  no  no  no  no 
+210941480 041923.68+220254.4                            145617189678878080       10.34        2.30  1.40 10.16  0.90 2, 1                              no        -2.71 III         no  no  no  no  no  no  no  no 
+210878996 041933.70+210354.5 HD27310                     49411266575206528  8.62  7.02  1.60  1.60  0.46  6.96  1.14 1, 2                              no        -2.85 III         no  no  no  no  no  no  no  no 
+210924194 041936.70+214624.5 *56Tau                      49520461823548288  5.35  5.64 -0.29 -0.29  0.00  5.64 -0.29 1, 1  1.5689                      no        -2.97 III  single no  no  no  no  no  no  no  no 
+210489662 041947.72+151409.5                           3311901066367387008       12.53        4.72  1.05 12.39  3.67 3, 1                              no        -2.43 III         no  no  no  no  no  no  no  no 
+210899231 042029.38+212243.3 LP414-167                   49448512531551616       10.13        5.41  0.46 10.07  4.95 2, 4  1.2256 1.3865               no        -2.40 III  multi  no  no  no  no  no  yes no  no 
+210860621 042031.38+204710.3                             49203007904355072       12.21        3.85  0.46 12.15  3.39 2, 4                              no        -2.62 III         no  no  no  no  no  no  no  no 
+210892869 042043.47+211650.5                             49443972749516032        8.53        5.15  1.47  8.34  3.68 2, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+210681303 042044.65+180559.3                             47508080666509056       10.31        6.25  0.00 10.31  6.25 6, 1                              no        -2.45 III  single no  no  no  no  no  no  no  no 
+210796990 042123.09+194923.0                             48258630495340032        9.10        3.20  0.51  9.03  2.69 2, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+210826075 042125.39+201559.1 V*V1100Tau                  49122537397324032        3.15       11.61  4.23  2.60  7.38 2, 2                              maybe 8:  -1.80 III         no  no  no  no  no  no  no  no 
+210828490 042138.32+201810.1 [RSP2011]249                49124190961270656 16.48 10.63  5.85  5.85  0.00 10.63  5.85 1, 1  0.3258                      no        -2.56 III  single yes no  no  no  no  no  no  no 
+210835057 042144.35+202410.5 LP415-19                    49131681384221184 19.48 12.51  6.97  6.97  0.64 12.43  6.33 1, 1  0.3419                      no        -2.55 III  single no  no  no  no  no  no  no  no 
+210834592 042145.86+202344.6 2MASSJ04214586+2023446      49131681384221952       12.93        7.72  0.46 12.87  7.26 3, 4  0.6466                      no        -2.25 III  single no  no  no  no  no  no  no  no 
+210858534 042222.44+204516.8                             49173840783139200        7.67        4.90  1.22  7.52  3.68 2, 1 18.6929                      no        -2.83 III  single no  no  yes no  no  no  no  no 
+210767482 042229.09+192229.6 HD284418                    48185585987790592 11.06  8.78  2.28  2.28  0.51  8.72  1.77 1, 2 15.3682                      no        -2.66 III  single yes yes yes no  no  no  no  no 
+210756090 042308.64+191207.2 TYC1272-784-1               48167959442012672 11.58  9.01  2.57  2.57  0.46  8.95  2.11 1, 4 19.8338                      no        -2.76 III  single no  no  yes no  no  no  no  no 
+210756194 042309.63+191213.4                             48167955146062720       10.07        3.15  0.46 10.01  2.69 3, 4 21.3839                      no        -2.69 III  single no  no  yes no  no  no  no  no 
+210878579 042311.37+210332.2 LP415-688                  145264383885453696       10.16        5.17  0.00 10.16  5.17 2, 1  0.3648                      no        -2.53 III  single yes no  no  no  no  no  no  no 
+210843728 042315.26+203207.6                             49155041709261184       10.17        2.89  0.46 10.11  2.43 2, 4  0.6751 0.6451               no        -2.73 III  multi  no  no  no  yes no  yes no  no 
+210634949 042351.92+172737.2 Cl*Melotte25VA287         3313978043833016704 17.40 12.56  4.84  4.84  1.80 12.33  3.04 1, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+210918922 042421.61+214110.1                            145355407129093632       12.09        2.86  0.46 12.03  2.40 2, 4                              no        -2.63 III         no  no  no  no  no  no  no  no 
+210711681 042425.98+183153.6                             47865421945438976        8.12        3.94  0.57  8.05  3.37 2, 1  0.6090                      no        -2.77 III  single no  no  yes no  no  no  no  no 
+210798039 042440.25+195019.3 EPIC210798039               48288184166603648 15.70 10.76  4.94  4.94  0.30 10.73  4.64 1, 2                              no        -2.57 III  single yes no  no  no  no  no  no  no 
+247987782 042521.09+254255.9 V*V1318Tau                 151226902300391040 14.15 10.25  3.90  3.90  0.46 10.19  3.44 1, 4  7.6394                      no        -2.66 III  single no  no  yes no  no  no  no  no 
+210644048 042523.14+173515.0 EPIC210644048             3314001885195169408 22.45 13.74  8.71  8.71  1.87 13.50  6.83 1, 3                              no        -2.16 III         no  no  no  no  no  no  no  no 
+210950988 042525.01+221159.9 *kap02Tau                  145484629809228544  5.26  4.61  0.66  0.66  0.13  4.59  0.53 1, 2  0.0808 0.4804 0.0641 0.2403 no        -2.88 III  multi  no  no  no  no  no  yes yes yes
+247937271 042543.09+252113.0                            149666764021501312       12.31        3.97  0.46 12.25  3.51 3, 4                              no              x           no  no  no  no  no  no  no  no 
+210754283 042555.29+191032.4 TYC1273-106-1               48015054310044416 11.23  7.35  3.88  3.88  0.46  7.29  3.42 1, 4                              no        -2.78 III         no  no  no  no  no  no  no  no 
+210716897 042621.54+183630.5 RXJ0426.3+1836            3314498903106580224        9.85        5.03  0.25  9.82  4.78 2, 2  1.4645                      no        -2.40 III  single no  no  no  no  no  no  no  no 
+210699053 042622.53+182057.5                           3314467395226776448       12.65        4.83  1.89 12.41  2.95 3, 1                              no        -2.35 III  single no  no  no  no  no  no  no  no 
+210742709 042625.72+185951.1                             47915243566112256       10.89        4.13  0.00 10.89  4.13 2, 1                              no        -2.61 III  single no  no  no  no  no  no  no  no 
+210721616 042626.14+184045.3                             47888855287062784       11.60        4.60  2.11 11.33  2.49 2, 1                              no        -2.60 III         no  no  no  no  no  no  no  no 
+210665423 042629.91+175248.9                           3314387607617541888        9.73        3.28  0.46  9.67  2.82 2, 4 24.7363                      no        -2.69 III  single no  no  no  no  no  no  no  no 
+210716088 042659.18+183548.7 2MASSJ04265918+1835487    3314500994755045120       14.74        6.98  0.46 14.68  6.52 3, 4                              yes   K    0.62 I           no  no  no  no  no  no  no  no 
+210671356 042705.06+175742.0                           3314395475997776512       13.76        5.95  0.45 13.71  5.51 3, 1                              no        -2.35 III         no  no  no  no  no  no  no  no 
+210858855 042711.48+204534.5                            144502216168850688        8.53        3.46  0.46  8.47  3.00 2, 4  0.1374                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+248019693 042724.72+255706.1 XEST02-040                 151210547064861056       13.33        6.02  0.52 13.26  5.50 3, 1  1.4708                      no        -2.42 III  single no  no  no  no  no  no  no  no 
+247737874 042728.84+235833.5 V*V915Tau                  146319884984828928       10.77        3.16  0.00 10.77  3.16 2, 1  0.9509                      no        -2.49 III  single no  no  yes no  no  no  no  no 
+247841048 042730.27+244123.5 2MASXJ04273023+2441232                              13.45       11.13  9.60 12.21  1.53 6, 1                              yes   K   -0.04 flat        no  no  no  no  no  no  no  no 
+210772187 042736.48+192644.4 LP415-108                   48048902948906368 15.64 10.19  5.45  5.45  2.22  9.90  3.24 1, 1  9.5599                      no        -2.49 III  single no  no  no  no  no  no  no  no 
+210871016 042737.08+205638.9 2MASSJ04273708+2056389     144506309274714624       12.07        7.44  0.39 12.02  7.06 3, 2  0.1545                      no        -2.34 III  single no  no  no  no  no  no  no  no 
+247986006 042739.68+254208.3 SSTtau042739.6+254208      151168864406286208       10.31        2.39  0.93 10.19  1.46 2, 1  1.4417                      no        -2.60 III  single no  no  no  no  no  no  no  no 
+210552148 042740.74+161455.3 LP415-113                 3312908906213736320 15.80 10.48  5.32  5.32  0.00 10.48  5.32 1, 1                              no        -2.58 III         no  no  no  no  no  no  no  no 
+247813679 042747.93+243012.0 2MASSJ04274793+2430121     149375633955627520        9.06        2.86  2.42  8.75  0.44 2, 1  1.4031                      no        -2.80 III  single no  no  no  no  no  no  no  no 
+247804146 042751.89+242612.5                            149340002908603008        9.03        4.28  0.35  8.98  3.93 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+247799152 042803.70+242407.7 V*V824Tau                  149338937755074560       11.36        5.97  0.46 11.30  5.51 6, 4  0.2828 0.3174               no        -2.40 III  multi  no  no  no  no  no  yes no  no 
+210666196 042810.75+175328.8                           3314380117194577408        9.34        4.84  0.97  9.21  3.87 2, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+248033498 042815.18+260317.6 XEST02-074                 151218140567025792       13.86        4.25  0.14 13.84  4.11 3, 1  1.4434                      no        -2.74 III  single no  no  no  no  no  no  no  no 
+247961728 042818.53+253140.9 V*V414Tau                  150975389014887424        5.49        6.50  4.70  4.88  1.80 2, 1                              maybe 9   -2.46 III         no  no  no  no  no  no  no  no 
+210712163 042832.19+183221.7                           3314579025719987840        8.92        4.86  0.48  8.86  4.38 2, 1  2.0565                      no        -2.72 III  single no  no  no  no  no  no  no  no 
+210791522 042837.21+194426.4 V*V918Tau                   48061409893621248  8.58  6.91  1.67  1.67  0.49  6.84  1.18 1, 3 11.9763                      no        -2.88 III  single yes yes yes no  no  no  no  no 
+210520833 042839.17+154520.2                           3312740784013859456       11.30        4.33  0.00 11.30  4.33 2, 1                              no        -1.87 III         no  no  no  no  no  no  no  no 
+210554781 042850.81+161720.4 V*V994Tau                 3312903580454386048 10.67  7.35  3.32  3.32  0.26  7.32  3.06 1, 2 11.4675 3.5949               no        -2.73 III  multi  yes yes yes no  yes no  yes no 
+247828086 042857.43+243607.4 SSTtau042857.4+243607      149371304630240640       10.72       10.20  5.44 10.02  4.76 3, 1                              yes   24  -2.31 III         no  no  no  no  no  no  no  no 
+210558541 042900.15+162046.8 V*V1104Tau                3312904233289409152 14.28  9.37  4.91  4.91  0.55  9.30  4.36 1, 2  0.9040                      no        -2.55 III  single yes no  no  no  no  no  no  no 
+210721261 042901.01+184025.3 V*V1103Tau                3314581984953794816 13.31  8.69  4.62  4.62  0.79  8.59  3.83 1, 3  1.5413                      no        -2.51 III  single no  no  no  no  no  no  no  no 
+248006115 042901.21+255104.6                            151197417348879360        9.66        2.41  1.64  9.45  0.77 2, 1  9.0493                      no        -2.84 III  single yes yes yes no  no  no  no  no 
+247817197 042902.98+243140.2 SSTtau042902.9+243140      149367830000033536        8.57       14.07  0.46  8.51 13.61 3, 4                              yes   3.5 -2.62 III         no  no  no  no  no  no  no  no 
+210710397 042907.76+183045.8 2MASSJ04290776+1830457    3314531231323918336 11.88  9.84  2.04  2.04  1.94  9.59  0.10 1, 2                              no        -2.35 III         no  no  no  no  no  no  no  no 
+210527150 042910.70+155124.5                           3312743459777428352        9.48        4.23  0.46  9.42  3.77 2, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+210516147 042917.87+154044.7                           3312725047253765632        9.72        3.65  0.46  9.66  3.19 2, 4                              no        -2.70 III         no  no  no  no  no  no  no  no 
+247869725 042923.45+245314.9 2MASSJ04292345+2453151     150889111712006400       12.23        5.01  0.35 12.19  4.66 3, 1                              yes   12  -0.66 II          no  no  no  no  no  no  no  no 
+210644381 042927.57+173530.2 2MASSJ04292757+1735303    3314169255776988672       11.97        2.63  0.37 11.92  2.26 3, 1  8.5757                      no        -2.57 III  single yes no  no  no  no  no  no  no 
+210881343 042928.51+210606.9                            144559188913607168        9.79        6.27  0.60  9.72  5.67 2, 1  6.4388 2.7789               no        -2.52 III  multi  no  no  no  no  no  no  yes no 
+248045033 042942.30+260841.9 TYC1833-575-1              151299057750380416 11.76  9.11  2.65  2.65  0.77  9.01  1.88 1, 1  2.6393                      no        -2.82 III  single no  no  yes no  no  no  no  no 
+247851007 042955.08+244533.3 V*V586Tau                  150872619037644032       10.66        3.33  1.19 10.51  2.14 2, 1  2.1236                      no        -2.64 III  single no  no  no  no  no  no  no  no 
+248023747 042958.15+255852.5 XEST14-OM-017              151293113515654784       11.79        2.84  0.00 11.79  2.84 2, 1  7.4803                      no        -2.65 III  single yes yes yes no  no  no  no  no 
+210540496 043004.17+160407.9                           3312846371490132992       11.99        6.37  0.00 11.99  6.37 4, 1  0.3409                      no        -2.42 III  single no  no  no  no  no  no  no  no 
+210513593 043008.59+153816.2 *80Tau                    3312536927686011520  5.55  4.69  0.86  0.86  0.13  4.67  0.73 1, 2  8.3291                      no        -2.89 III  single yes no  yes no  no  no  no  no 
+247963532 043009.46+253226.9 V*GWTau                    150983704071647744 10.86  9.31  1.55  1.55  1.37  9.13  0.19 1, 2                              no        -2.79 III         no  no  no  no  no  no  no  no 
+247836397 043016.55+243928.5 V*V587Tau                  147868645895185024       10.57        3.35  1.48 10.38  1.86 2, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+210707808 043021.86+182830.6 2MASSJ04302185+1828305    3314521885475082496 14.50  8.19  6.31  6.31  1.53  7.99  4.78 1, 2                              maybe 22  -2.54 III         no  no  no  no  no  no  no  no 
+248032266 043032.92+260244.1 EPIC248032266              151107433489095424       10.81        2.60  0.46 10.75  2.14 2, 4  6.3613                      no        -2.79 III  single yes no  yes no  no  no  no  no 
+247944904 043034.27+252427.8 SSTtau043034.2+252427      150931958305673216       13.74        3.90  0.46 13.68  3.44 3, 4                              no        -2.51 III         no  no  no  no  no  no  no  no 
+247592661 043038.19+225428.8 V*V925Tau                  145919658456448128 13.02  8.38  4.64  4.64  0.69  8.29  3.95 1, 3  2.4979 1.8809               no        -2.75 III  multi  no  no  yes no  no  yes no  no 
+246795385 043038.88+154130.7 *81Tau                    3312628358950130176  5.45  4.90  0.55  0.55  0.46  4.84  0.09 1, 4  2.1745                      no        -2.87 III  single no  no  no  no  no  no  no  no 
+247814868 043041.54+243041.4 EPIC247814868              147862736020188032        9.38        3.84  1.25  9.21  2.59 2, 1  5.0474 4.6330               no        -2.78 III  multi  no  no  yes yes no  yes no  no 
+247820628 043043.69+243303.4 XEST13-037                 147863977266603520       11.85        5.26  0.92 11.74  4.34 3, 1  8.8867                      no        -2.67 III  single no  no  no  no  no  no  no  no 
+247556609 043045.00+223748.3 V*EYTau                    145858674218113280        9.79        4.94  1.22  9.63  3.72 3, 1 21.0743                      no        -2.54 III  single no  no  no  no  no  no  no  no 
+210698561 043045.67+182031.1                           3314323771520446592       10.25        4.98  1.17 10.10  3.81 2, 1                              no        -2.78 III         no  no  no  no  no  no  no  no 
+247495998 043051.24+220951.6                            145061936306850688        9.83        3.35  0.46  9.77  2.89 3, 4                              no        -2.78 III         no  no  no  no  no  no  no  no 
+210668334 043054.69+175512.1 TYC1269-261-1             3314204470212597504 11.59  9.17  2.42  2.42  1.89  8.93  0.53 1, 2  2.9555                      no        -2.84 III  single no  no  no  no  no  no  no  no 
+247862511 043055.78+245017.3 V*V1105Tau                 147877549363243520       10.68        5.37  0.17 10.65  5.20 3, 1  6.6062                      no        -2.56 III  single no  no  no  no  no  no  no  no 
+210800699 043102.89+195240.5 HD284520                   144154770494886016 10.23  8.88  1.35  1.35  0.15  8.86  1.21 1, 3                              no        -2.63 III         no  no  no  no  no  no  no  no 
+247865067 043107.25+245120.3 V*V588Tau                  147879091255647232        9.41        4.25  0.21  9.39  4.04 2, 1                              no        -2.71 III         no  no  no  no  no  no  no  no 
+248019682 043122.31+255705.9                            151102210808905472       11.40        3.22  0.88 11.28  2.34 2, 1  1.9883                      no        -2.74 III  single yes no  yes no  no  no  no  no 
+210693615 043125.14+181616.7 HD285845                  3314324321276386816 10.31  8.10  2.21  2.21  0.44  8.04  1.77 1, 2  1.4911 3.7205               no        -2.65 III  multi  no  no  yes yes no  no  yes no 
+246835782 043125.38+160701.6 HD285870                  3312856576332395904 11.10  9.25  1.85  1.85  1.44  9.07  0.40 1, 2                              no        -2.77 III         no  no  no  no  no  no  no  no 
+246719002 043128.79+144830.5                           3312432852038755584        9.44        3.26  0.00  9.44  3.26 2, 1                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247878945 043130.59+245657.4 V*GXTau                    147903284807405312       12.33        3.17  1.48 12.14  1.69 3, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247605584 043131.42+230025.9 SSTtau043131.4+230025      145968346205221760       10.47        4.18  0.00 10.47  4.18 3, 1 20.2055                      no        -2.69 III  single no  no  yes no  no  no  no  no 
+247762666 043143.23+240903.5 2MASSJ04314322+2409035     146291744359132800        9.90        4.95  0.41  9.84  4.54 2, 1  2.8606                      no        -2.71 III  single no  no  no  no  no  no  no  no 
+210658975 043143.81+174726.2 GSC01269-00771            3314152213346649728 12.50  8.93  3.57  3.57  1.55  8.73  2.02 1, 2 19.5199                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+248023313 043146.34+255840.1 USNO-B1.01159-00057240     151096640236357632       12.31        5.00  0.61 12.23  4.39 3, 1  4.7868                      no        -2.63 III  single yes no  no  yes no  no  no  no 
+248010721 043149.64+255306.7 HD283707                   151094922249209600  9.78  8.37  1.41  1.41  0.04  8.36  1.37 1, 2                              no        -2.74 III         no  no  no  no  no  no  no  no 
+246810368 043151.75+155105.6 *85Tau                    3312637842237882880  6.00  5.15  0.85  0.85  0.57  5.07  0.28 1, 1  0.6137                      no        -2.87 III  single no  no  no  no  no  no  no  no 
+210696429 043158.61+181840.7 GSC01269-00641            3314314425671714560 13.50  9.22  4.28  4.28  0.74  9.13  3.54 1, 2 19.7982                      no        -2.81 III  single no  no  yes no  no  no  no  no 
+248029712 043200.65+260133.9                            151098392583042048       12.65        4.48  0.46 12.59  4.02 3, 4  0.1343                      no        -2.63 III  single no  no  no  no  no  no  no  no 
+247989699 043203.89+254346.6                            151037477061831936       13.65        3.01  0.77 13.55  2.24 3, 1  1.3447                      no        -2.73 III  single no  no  yes no  no  no  no  no 
+210674161 043205.03+175959.0 [GBA2007]1384             3314253020522352768       10.98        3.10  2.89 10.61  0.21 2, 1  7.4943                      no        -2.88 III  single yes yes yes no  no  no  no  no 
+210672968 043205.65+175859.0                           3314252956098212352       12.16        6.97  0.24 12.13  6.73 3, 1                              no        -2.46 III         no  no  no  no  no  no  no  no 
+247993188 043208.44+254518.4 XEST19-019                 151037614500781184       12.11        2.91  0.00 12.11  2.91 2, 1  6.2696                      maybe 22  -1.64 III  single no  no  no  no  no  no  no  no 
+247875387 043209.34+245529.4 V*GZTau                    147899608315257344       12.71        2.93  0.88 12.60  2.05 3, 1                              no        -2.65 III         no  no  no  no  no  no  no  no 
+247881470 043209.75+245756.3 V*GYTau                    147904143800719488       11.75        3.34  0.00 11.75  3.34 2, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247929017 043213.61+251746.1 TYC1833-754-1              150918244474029568 11.75  9.65  2.10  2.10  1.46  9.46  0.64 1, 2  0.0966 0.1068 0.1022        no        -2.64 III  multi  no  no  no  no  no  yes no  yes
+247881456 043216.49+245756.0 V*HHTau                    147901223222956032       13.26        2.64  0.37 13.21  2.27 3, 1                              maybe 12  -1.91 III         no  no  no  no  no  no  no  no 
+247610938 043219.43+230255.6                            145969553092235392        9.52        4.37  2.34  9.22  2.03 3, 1  0.0626 0.0689 0.4485 0.0523 no        -2.78 III  multi  no  no  no  no  no  yes yes yes
+247048801 043220.03+181100.1 2XMMJ043219.9+181059      3314309615308355968       11.95        3.66  2.03 11.69  1.63 2, 1 11.4669                      no        -2.60 III  single no  no  yes no  no  no  no  no 
+247052219 043221.57+181258.3 HD285844                  3314309821465142528 10.74  8.85  1.89  1.89  0.52  8.79  1.37 1, 2 14.9102                      no        -2.84 III  single no  no  yes no  no  no  no  no 
+247886065 043223.89+245948.9 V*HITau                    147901669899548416       12.86        2.74  0.83 12.76  1.92 3, 1  4.4551 1.8512 2.1064        no        -2.77 III  multi  no  no  no  no  no  yes yes no 
+247061788 043226.89+181823.0 2MASSJ04322689+1818230    3314337137458764800       11.69        5.70  1.13 11.54  4.57 3, 2  0.4459 0.4725               no        -2.52 III  multi  no  no  no  yes no  yes no  no 
+247054089 043229.46+181400.2 2MASSJ04322946+1814002    3314310165064155008       13.17        7.28  0.57 13.10  6.71 3, 1                              yes   4.5 -0.58 II          no  no  no  no  no  no  no  no 
+247352220 043232.19+210011.8                            144381308547298816        9.06        5.30  0.68  8.97  4.62 3, 1 18.4618                      no        -2.72 III  single no  no  yes no  no  no  no  no 
+248009030 043236.05+255222.5 XEST19-041                 151045822182881152       14.10        5.17  1.14 13.95  4.03 4, 1                              no        -2.62 III         no  no  no  no  no  no  no  no 
+247139505 043237.84+190248.1 LP415-183                 3410639993682264960 15.10  9.98  5.12  5.12  0.46  9.92  4.66 1, 4 18.3841                      maybe 22  -2.29 III  single no  no  no  no  no  no  no  no 
+246747304 043238.01+150852.5                           3312539362931711872       12.73        8.62  1.63 12.52  6.98 3, 1  1.8972                      maybe 4.6 -1.84 III  single no  no  no  no  no  no  no  no 
+247566033 043240.60+224210.7 V*V828Tau                  145945119022087808       11.44        5.54  1.06 11.30  4.48 3, 1  1.7855 0.8944               no        -2.64 III  multi  no  no  no  no  no  no  yes no 
+247786782 043241.66+241903.9 CoKuHKTauG1                147795154710729088 16.80  8.88  7.92  7.92  4.58  8.29  3.34 1, 1                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247126197 043242.43+185510.2 HD285840                  3410633602770942464 10.85  8.69  2.16  2.16  0.10  8.68  2.06 1, 3  1.5461                      no        -2.76 III  single no  no  yes no  no  no  no  no 
+248077938 043246.08+262419.2 2MASSJ04324606+2624192     151145229201316736        9.48        4.65  0.16  9.47  4.49 2, 1                              no        -2.56 III         no  no  no  no  no  no  no  no 
+247815872 043248.13+243106.3 2MASSJ04324813+2431063     147807760439646592       14.74        6.69  0.74 14.64  5.95 4, 3                              no        -2.38 III         no  no  no  no  no  no  no  no 
+246825070 043250.11+160020.9 V*V996Tau                 3312652513846244096  8.90  6.77  2.13  2.13  0.49  6.71  1.64 1, 3  9.4109                      no        -2.86 III  single yes yes yes no  no  no  no  no 
+247579962 043253.89+224837.6 [GBA2007]1498              145946669506549504       11.69        4.81  0.46 11.63  4.35 3, 4                              no        -2.54 III         no  no  no  no  no  no  no  no 
+247526113 043256.46+222342.5 HD284481                   145091730497092352 10.86  9.10  1.76  1.76  0.39  9.05  1.37 1, 2  0.4090 7.2198 0.3951 0.3951 no        -2.68 III  multi  no  no  no  yes no  yes yes no 
+246807261 043259.45+154908.2 V*V997Tau                 3312644885984344704  8.64  6.94  1.70  1.70  0.49  6.88  1.21 1, 3  8.7419 4.5279               no        -2.87 III  multi  yes yes yes no  no  no  yes no 
+247057813 043314.14+181609.3 TYC1270-470-1             3314286388125179648 11.39  8.95  2.44  2.44  1.09  8.81  1.35 1, 2 13.5914                      no        -2.77 III  single no  no  no  no  no  no  no  no 
+247088811 043315.65+183338.6                           3314347651538641664        8.37        4.55  0.24  8.34  4.31 2, 1  0.5670                      no        -2.74 III  single no  no  no  no  no  no  no  no 
+247066206 043318.98+182051.5 GSC01270-00765            3314335488191291008 13.50  9.56  3.94  3.94  1.84  9.32  2.10 1, 2                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247654955 043322.25+232241.9                            146005287220079232        7.94        4.20  0.46  7.88  3.74 2, 4                              no        -2.86 III         no  no  no  no  no  no  no  no 
+248024964 043324.91+255926.2 2MASSJ04332491+2559262     151071080885925248       13.24        5.90  1.29 13.08  4.61 3, 1                              no        -2.60 III         no  no  no  no  no  no  no  no 
+247592395 043325.77+225421.3                                                     14.73        8.80  4.10 14.20  4.70 4, 1                              yes   3.6  0.26 flat        no  no  no  no  no  no  no  no 
+247781229 043328.88+241645.5 HD28819                    147785293465813760  7.80  6.95  0.85  0.85  0.12  6.93  0.73 1, 2  0.6086 0.2849               no        -2.85 III  multi  no  no  no  no  no  no  yes yes
+247792080 043334.06+242113.1                            147790202612482560        7.89        6.98  3.06  7.49  3.92 3, 1                              no        -0.46 II          no  no  no  no  no  no  no  no 
+247956027 043334.49+252913.6                            151020331552455040        8.48        4.59  0.27  8.45  4.31 2, 1                              no        -2.83 III         no  no  no  no  no  no  no  no 
+247045617 043341.64+180907.9                           3314280959286523520       11.23        4.83  1.28 11.06  3.55 2, 1  0.4186                      no        -2.54 III  single yes no  no  no  no  no  no  no 
+247558403 043341.83+223836.2 SSTtau043341.8+223836      145191614255430400       11.27        6.63  1.64 11.06  4.99 3, 1                              no        -2.55 III         no  no  no  no  no  no  no  no 
+247596579 043344.14+225617.9 [GBA2007]1636              145954572246366080        9.54        3.13  1.02  9.41  2.11 3, 1  0.2080 0.4237               no        -2.81 III  multi  no  no  no  yes no  no  yes no 
+246918781 043344.49+165608.0 TYC1270-145-1             3313298064612124928 11.16  8.43  2.73  2.73  0.46  8.37  2.27 1, 4                              no        -2.94 III         no  no  no  no  no  no  no  no 
+246932072 043345.55+170354.9                           3313308196436720256        8.44        3.49  0.46  8.38  3.03 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247595998 043348.09+225601.0 XEST17-OM-057              145955843556685312       12.58        4.17  0.00 12.58  4.17 3, 1 10.9229                      no        -2.72 III  single no  no  no  no  no  no  no  no 
+247540661 043348.87+223021.3                            145176388595566976        9.77        2.44  0.46  9.71  1.98 3, 4  6.9755                      no        -2.79 III  single no  no  yes no  no  no  no  no 
+247973165 043349.14+253632.2                            151023595727589632       11.05        4.03  1.59 10.84  2.44 3, 1                              no        -2.57 III         no  no  no  no  no  no  no  no 
+246756030 043354.45+151454.5                           3309544091395062656        8.88        4.07  0.46  8.82  3.61 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247801362 043355.62+242501.6 EPIC247801362              147814155646030208        9.00        5.05  0.79  8.90  4.26 2, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247527554 043405.90+222422.1                            145171857406001024       11.07        4.46  0.87 10.96  3.60 3, 1                              no        -2.89 III         no  no  no  no  no  no  no  no 
+247646683 043406.68+231900.5 HD284531                   146000511216543616 10.29  8.67  1.62  1.62  0.25  8.64  1.37 1, 2  6.2458                      no        -2.83 III  single no  no  yes no  no  no  no  no 
+247585953 043407.17+225122.5 2MASSJ04340717+2251227     145203979465526912        8.76        3.88  2.16  8.48  1.72 3, 1  2.9775 5.3517 1.4534        no        -2.75 III  multi  no  no  no  no  no  no  yes no 
+246796319 043413.68+154206.3                           3312582209524737792        8.59        4.70  0.33  8.54  4.37 2, 1  1.4346                      no        -2.64 III  single no  no  yes no  no  no  no  no 
+247532735 043413.72+222644.7 V*V1108Tau                 145172407161805440       11.57        3.00  2.32 11.27  0.68 3, 1                              no        -2.89 III         no  no  no  no  no  no  no  no 
+247231300 043420.52+195515.1                           3410846770586969344       10.41        2.67  0.46 10.35  2.21 2, 4                              no        -2.62 III         no  no  no  no  no  no  no  no 
+247510877 043424.61+221644.6                            145028749096776832       11.83        2.99  0.00 11.83  2.99 3, 1                              no        -2.64 III         no  no  no  no  no  no  no  no 
+247618888 043428.28+230633.2 HD28944                    145982437994170752  9.28  8.09  1.19  1.19  0.00  8.09  1.19 1, 1  0.8708 0.9300 0.8949 0.9094 no        -2.82 III  multi  no  no  no  yes no  yes no  no 
+247798120 043429.60+242342.1 GSC01833-00808             147810341715115520 13.00 10.21  2.79  2.79  1.44 10.02  1.35 1, 2  3.7453                      no        -2.79 III  single no  no  yes yes no  no  no  no 
+248032137 043433.28+260240.5 2MASSJ04343322+2602403     151075169694851712       10.28        4.36  0.00 10.28  4.36 2, 1  0.9543                      no        -2.70 III  single no  no  no  no  no  no  no  no 
+246933226 043437.67+170434.7                           3313305928694533504       10.35        3.24  0.00 10.35  3.24 2, 1  6.5258                      maybe 22: -2.33 III  single no  no  yes no  no  no  no  no 
+247888948 043439.28+250101.0 V*V1110Tau                 147940663906992512 10.31  7.80  2.51  2.51  1.14  7.65  1.37 1, 2  1.4853                      no        -2.88 III  multi  no  no  yes no  yes no  no  no 
+247446215 043442.91+214621.7 V*BRTau                    144809087288307584 12.45 11.05  1.40  1.40  0.46 10.99  0.94 1, 4  0.3906                      no        -2.82 III  single no  no  no  no  no  no  no  no 
+246757401 043443.31+151554.3 V*TYTau                   3309542025514211840        9.52        2.61  0.42  9.47  2.19 2, 2  1.0764                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+247797246 043447.56+242320.3 XEST25-020                 147623974494458240       11.25        3.47  0.46 11.19  3.01 2, 4                              maybe 24  -2.54 III         no  no  no  no  no  no  no  no 
+247773760 043448.84+241337.9 XEST12-008                 147617377424704768       13.12        5.06  1.91 12.88  3.14 3, 1  3.8717                      no        -2.45 III  single no  no  no  no  no  no  no  no 
+247035595 043449.07+180323.4 HD285899                  3314265256886210944 10.60  7.44  3.16  3.16  0.97  7.32  2.19 1, 2                              no        -2.87 III         no  no  no  no  no  no  no  no 
+247776236 043450.17+241440.2 HD28975                    147617961540254976  9.07  7.11  1.96  1.96  1.56  6.91  0.40 1, 2  4.3530                      no        -2.84 III  single no  no  no  no  no  no  no  yes
+247840566 043455.59+244111.6 XEST25-027                 147825391280434176       13.05        4.94  0.07 13.04  4.87 3, 1  1.6347                      no        -2.56 III  single no  no  no  no  no  no  no  no 
+246885255 043458.14+163636.6                           3313085476613655040        9.35        3.64  0.46  9.29  3.18 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+247598616 043458.73+225713.3 XEST08-004                 145225355518492416       13.44        6.07  1.26 13.27  4.82 3, 1  2.0012                      no        -2.43 III  single no  no  no  no  no  no  no  no 
+247834552 043459.97+243843.8                            147824974668576768       14.12        3.69  0.00 14.12  3.69 3, 1                              no        -2.78 III         no  no  no  no  no  no  no  no 
+247603230 043513.17+225920.5 V*EZTau                    145226970426193280       10.25        5.66  1.13 10.10  4.52 3, 3  0.5092                      no        -2.50 III  single no  no  no  no  no  no  no  no 
+247804500 043524.74+242621.8 2MASSJ04352474+2426218     147629850009692416       13.79        3.76  0.46 13.73  3.30 3, 4                              no        -1.03 II          no  no  no  no  no  no  no  no 
+247616322 043530.08+230524.3                            145233842373861504       13.31        5.36  0.38 13.26  4.98 3, 1  0.5789                      no        -2.62 III  single no  no  yes no  no  no  no  no 
+246757781 043533.46+151608.8                           3309554261877684096        8.37        3.45  0.46  8.31  2.99 2, 4                              no        -2.84 III         no  no  no  no  no  no  no  no 
+246932950 043535.26+170423.9 HD29105                   3313384651152556416  9.61  7.70  1.91  1.91  0.14  7.68  1.77 1, 2  2.6815 2.6794               no        -2.77 III  multi  no  no  no  no  yes yes no  no 
+247291857 043542.84+202841.6 HD284559                  3410905212205260416 10.37  7.21  3.16  3.16  0.97  7.09  2.19 1, 2                              no        -2.78 III         no  no  no  no  no  no  no  no 
+247469885 043544.28+215743.0 SSTtau043544.2+215743      144817711582602496       10.61        1.69  0.83 10.50  0.86 3, 1  0.0451 0.0523 0.1012 0.0954 no        -2.39 III  multi  no  no  no  no  no  yes yes yes
+247568050 043551.16+224305.8 XEST09-OM-113              145159517964261120       14.54        3.85  0.46 14.48  3.39 3, 4                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247804259 043552.68+242615.4 XEST12-069                 147628162086534528       14.48        4.12  0.46 14.42  3.66 3, 4  1.0865                      no        -2.51 III  single no  no  yes yes no  no  no  no 
+247245998 043552.96+200330.8                           3410830484070927872       12.20        3.89  0.46 12.15  3.43 3, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247550274 043555.70+223450.4 XEST09-OM-137              145134061693732224       13.26        4.24  0.46 13.20  3.78 3, 4  5.5167                      no        -1.09 II   single no  no  yes no  no  no  no  no 
+246831226 043559.18+160413.6                           3312975735906198272        9.44        4.47  0.31  9.39  4.16 2, 1  3.0510 2.5211               no        -2.54 III  multi  no  no  yes no  no  yes no  no 
+247548479 043559.41+223400.5 2MASSJ04355941+2234005     145131038036756096       12.59        5.55  0.36 12.55  5.19 3, 1  0.7719                      no        -2.53 III  single no  no  no  no  no  no  no  no 
+247197991 043608.01+193617.6 HD284570                  3410775783367578880 10.08  8.44  1.64  1.64  0.27  8.41  1.37 1, 2                              no        -2.85 III         no  no  no  no  no  no  no  no 
+247556776 043610.78+223753.0 [GBA2007]1970              145155124213341184       13.34        4.93  0.46 13.28  4.47 3, 4  1.8206                      no        -2.65 III  single no  no  no  no  no  no  no  no 
+247555225 043619.82+223709.5 XEST09-OM-234              145154879400251136       14.52        4.52  0.46 14.46  4.06 3, 4  0.8068                      no        -2.53 III  single no  no  no  no  no  no  no  no 
+246745532 043623.61+150738.2                           3309501554039026432        9.30        4.11  0.47  9.24  3.65 2, 1                              no        -2.61 III         no  no  no  no  no  no  no  no 
+247099567 043627.64+183956.5 HD29181                   3410391572774350848  8.32  7.65  0.67  0.67  0.49  7.58  0.19 1, 2  0.3201 0.4504 0.1499 0.1499 yes   22  -2.52 III  multi  no  no  no  no  no  yes yes yes
+247649941 043629.13+232027.0 V*V1116Tau                 146740207663868032  6.02  4.99  1.03  1.03  0.39  4.93  0.64 1, 3  5.8452 0.6571               no        -2.82 III  multi  no  no  no  yes no  no  yes no 
+247554469 043631.24+223648.1 XEST09-OM-276              145154196500401280       12.87        3.25  0.46 12.81  2.79 3, 4  0.9817 0.9870               no        -2.52 III  multi  no  no  no  no  no  yes no  no 
+247108931 043637.66+184517.7 V*RZTau                   3410404320237268096 10.19  8.59  1.60  1.60  0.46  8.53  1.14 1, 2  0.2078                      no        -2.61 III  single no  no  no  no  no  no  no  no 
+247610046 043638.03+230231.1 V*FHTau                    145218857232329472        9.30        5.08  1.55  9.10  3.53 2, 1  5.7671                      no        -2.70 III  single no  no  no  no  no  no  no  no 
+247494953 043640.88+220921.5                            144920447200383232       11.80        2.66  0.46 11.74  2.20 2, 4                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247119881 043644.15+185131.9                           3410407477034905600       11.01        1.71  0.25 10.97  1.46 2, 1  2.7789                      no        -2.86 III  single no  no  no  no  no  no  no  no 
+246823393 043656.43+155917.5                           3309969636755209472        8.58        3.54  1.73  8.36  1.80 2, 1                              no        -2.82 III         no  no  no  no  no  no  no  no 
+248062377 043704.46+261653.6                            148466303479958528        8.96        6.15  1.34  8.79  4.81 3, 1  1.7477 3.4838               no        -2.74 III  multi  yes no  no  no  no  no  yes no 
+247685149 043712.27+233616.5 V*FITau                    146777110022719744       11.61        4.45  0.46 11.55  3.99 2, 4 12.4758                      no        -2.62 III  single no  no  no  no  no  no  no  no 
+247260652 043714.23+201137.1                           3410835565015481984        8.66        3.62  0.46  8.60  3.16 3, 4                              no        -2.88 III         no  no  no  no  no  no  no  no 
+247086981 043714.77+183234.9 V*SZTau                   3409635486731094400  6.37  4.31  2.06  2.06  0.81  4.20  1.25 1, 2  3.1486                      no        -2.84 III  single no  no  no  no  no  no  no  no 
+247294985 043720.52+203024.3 WISEJ043720.50+203024.4   3411266337351276032       11.96        2.73  0.46 11.90  2.27 3, 4                              yes   12  -0.87 II          no  no  no  no  no  no  no  no 
+247119725 043726.87+185126.6 [WKS96]42                 3410400884263390720 11.66  8.67  2.99  2.99  0.20  8.64  2.80 1, 3  4.1750                      no        -2.69 III  single no  no  yes no  no  no  no  no 
+247673486 043727.57+233107.4 V*HSTau                    146749278634741248       10.11        4.02  0.46 10.05  3.56 3, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247097552 043728.10+183847.2                           3410388446038135424        7.64        3.42  1.21  7.48  2.20 2, 1                              no        -2.91 III         no  no  no  no  no  no  no  no 
+247673238 043728.43+233100.5 V*HRTau                    146749209915478784       12.65        2.04  1.75 12.43  0.30 3, 1                              no        -2.54 III         no  no  no  no  no  no  no  no 
+247103315 043738.73+184208.5                           3410395077465092608       10.53        5.40  2.37 10.22  3.03 2, 1  0.7604 0.2294               no        -2.62 III  multi  no  no  no  no  no  no  yes no 
+247651177 043738.77+232058.9                            146734503947264640        8.27        3.12  0.73  8.18  2.39 2, 1                              no        -2.78 III         no  no  no  no  no  no  no  no 
+248137161 043747.82+265418.2                            151593722571041280        8.54        5.48  1.65  8.32  3.83 2, 1  0.3255                      no        -2.86 III  single no  no  no  no  no  no  no  no 
+248077220 043751.36+262358.5 V*HTTau                    148468876164740224 13.18  7.13  6.05  6.05  2.59  6.80  3.46 1, 1 14.9173 5.0349 1.8478        no        -2.77 III  multi  no  no  yes no  no  yes yes no 
+247603351 043800.40+225924.2 HD29318                    146669495322321024  9.58  8.24  1.34  1.34  0.46  8.18  0.88 1, 4  1.6766 1.6026               no        -2.68 III  multi  no  no  no  yes no  yes no  no 
+248019863 043801.88+255711.2 V*FKTau                    148420020912450176        8.28        7.71  0.33  8.24  7.38 3, 2                              no        -2.71 III         no  no  no  no  no  no  no  no 
+248058010 043816.59+261450.0 2MASSJ04381659+2614500     148463211103036544       10.02       12.50 10.11  8.71  2.39 6, 1                              no        -2.56 III         no  no  no  no  no  no  no  no 
+248008254 043820.97+255201.5 2MASSJ04382097+2552015     148371642400832256        8.20        9.72  5.42  7.50  4.30 4, 1  2.1732                      no        -2.70 III  single no  no  no  no  no  no  no  no 
+247116745 043821.78+184945.0                           3410397688807854464        8.66        3.19  0.46  8.60  2.73 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247483476 043826.00+220401.2 V*V947Tau                  144924845247017216       12.03        2.81  0.37 11.98  2.43 2, 1                              no        -2.67 III         no  no  no  no  no  no  no  no 
+248138492 043826.79+265501.5 SSTtau043826.7+265501      151582937909912576        9.88        3.00  2.21  9.59  0.79 2, 1                              no        -2.65 III         no  no  no  no  no  no  no  no 
+246798563 043827.65+154338.0 V*V1326Tau                3309969804256882688 13.29 10.14  3.15  3.15  0.40 10.09  2.75 1, 2  2.5385                      no        -2.63 III  single no  no  no  no  no  no  no  no 
+247106666 043831.05+184401.4 V*V1149Tau                3409645176177644032  8.48  7.81  0.67  0.67  0.63  7.73  0.04 1, 2  4.9084                      no        -2.89 III  single no  no  no  no  no  no  no  no 
+246988269 043835.19+173634.3 2MASSWJ0438352+173634                               14.83        8.86  4.05 14.31  4.81 4, 1                              no        -2.01 III         no  no  no  no  no  no  no  no 
+247098901 043837.07+183934.7 WISEJ043837.06+183934.2                             14.80        4.53  1.55 14.60  2.97 4, 1                              yes   3.5  0.45 I           no  no  no  no  no  no  no  no 
+246967551 043839.29+172429.1 HD29420                   3313236491960660736  7.90  6.94  0.96  0.96  0.23  6.91  0.73 1, 2  0.5137 1.3254 1.0066 0.9517 no        -2.83 III  multi  no  no  no  no  no  yes yes yes
+247326070 043852.14+204650.6 HD284612                  3411254272788219136  9.92  8.55  1.37  1.37  0.23  8.52  1.14 1, 2  1.6599                      no        -2.74 III  single no  no  no  no  no  no  no  no 
+247007846 043905.76+174749.0                           3409515674323711232       13.50        3.15  0.46 13.44  2.69 2, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247239727 043908.32+200001.3                           3411002145323241728       11.78        2.36  0.00 11.78  2.36 2, 1                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247917882 043923.14+251305.7 HD29459                    148144799407843200  6.20  5.66  0.54  0.54  0.14  5.64  0.40 1, 2  0.3062 0.3910 0.2520 0.3882 no        -2.87 III  multi  no  no  no  no  no  yes yes yes
+247935687 043939.96+252034.2 GSC01834-00273             148153698580075648        8.73        4.27  4.39  8.17 -0.12 2, 2                              no        -2.52 III         no  no  no  no  no  no  no  no 
+247596240 043950.07+225608.0                            146472098625499520        8.31        3.64  0.46  8.25  3.18 2, 4                              no        -2.98 III         no  no  no  no  no  no  no  no 
+247280052 044009.47+202218.4                           3411041384144526720       13.40        2.53  0.27 13.36  2.26 2, 1                              no        -2.64 III         no  no  no  no  no  no  no  no 
+247156167 044010.23+191223.7 TYC1275-510-1             3409776739614156032 10.92  7.10  3.82  3.82  0.46  7.04  3.36 1, 4                              no        -2.81 III         no  no  no  no  no  no  no  no 
+246863855 044012.70+162355.1 HD29588                   3310090716176391296  9.76  8.27  1.49  1.49  0.15  8.25  1.34 1, 2                              no        -2.89 III         no  no  no  no  no  no  no  no 
+247112652 044020.25+184725.2                           3409727914425986688       10.90        3.61  0.46 10.85  3.15 2, 4 15.7765                      no        -2.59 III  single no  no  yes no  no  no  no  no 
+247939258 044055.90+252203.5 2MASSJ04405590+2522035     148162838270505600       10.75        7.36  2.84 10.38  4.52 4, 1                              no        -2.55 III         no  no  no  no  no  no  no  no 
+247980762 044102.75+253946.8 2MASSJ04410274+2539470     148188882952182656        5.20        8.93  5.45  4.49  3.47 2, 1 11.0291                      no        -2.74 III  single no  no  yes no  no  no  no  no 
+247958685 044104.09+253021.9 2MASSJ04410409+2530219     148169087447987712       13.22        9.50  4.21 12.68  5.29 3, 1                              no        -2.24 III         no  no  no  no  no  no  no  no 
+247930016 044113.26+251809.7 2MASSJ04411326+2518097     148161463880971392       11.12        7.97  2.76 10.77  5.21 3, 1                              no        -2.59 III         no  no  no  no  no  no  no  no 
+246970936 044113.98+172629.2                           3409257903268324480       10.28        2.90  0.46 10.22  2.44 2, 4 25.3620                      no        -2.67 III  single no  no  no  no  no  no  no  no 
+248175684 044123.99+271512.5 V*V1328Tau                 154623289422217600 13.11 10.43  2.68  2.68  0.66 10.34  2.02 1, 2  1.5287 3.8492               no        -2.76 III  multi  no  no  yes yes no  no  yes no 
+248014510 044124.71+255448.4 HD283809                   148290038022339584 10.70  6.17  4.53  4.53  3.19  5.76  1.34 1, 2  1.6530 1.4033 0.9651 2.3834 no        -2.82 III  multi  no  no  no  yes no  yes yes no 
+247765429 044126.75+241012.4 HD283818                   146898945359013632 10.79  9.06  1.73  1.73  0.72  8.97  1.01 1, 1                              no        -2.79 III         no  no  no  no  no  no  no  no 
+246884352 044153.70+163603.9                           3310121300640994304       10.08        2.71  0.30 10.04  2.41 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+248010214 044156.42+255254.0                            148286258451118080       11.12        6.95  0.46 11.06  6.49 3, 4  2.9522                      no        -2.55 III  single no  no  yes no  no  no  no  no 
+248021334 044159.05+255748.8                            148291167598621312       12.51        6.17  0.88 12.39  5.29 3, 1  0.2892                      no        -2.48 III  single no  no  no  no  no  no  no  no 
+247737066 044200.48+235813.0 WISEJ044200.48+235812.5                             15.39        5.80  3.27 14.97  2.53 4, 1                              yes   3.5  1.06 I           no  no  no  no  no  no  no  no 
+247742862 044204.10+240038.7 HD29745                    146848750077282816  7.19  6.03  1.16  1.16  0.02  6.03  1.14 1, 2  1.2689                      no        -2.85 III  single no  no  no  no  no  no  no  no 
+246819979 044207.02+155709.4 TYC1267-187-1             3310014751092389760 10.62  8.51  2.11  2.11  0.00  8.51  2.11 1, 1  1.1098                      no        -2.86 III  single no  no  no  no  no  no  no  no 
+247993234 044208.48+254519.8 XEST07-052                 148272475900680448       13.06        6.90  1.52 12.87  5.38 3, 1  0.7854                      no        -2.49 III  single no  no  yes no  no  no  no  no 
+248108539 044216.72+263917.6 2MASSJ04421672+2639177     148534984301363200       10.90        3.67  0.46 10.84  3.21 2, 4                              no        -2.64 III         no  no  no  no  no  no  no  no 
+247687887 044218.97+233727.0 HD284646                   146800646443606272  9.92  8.37  1.55  1.55  0.21  8.34  1.34 1, 2  2.1757 2.2821 7.4041        no        -2.91 III  multi  no  no  no  yes no  yes yes no 
+246912374 044220.64+165220.9                           3406207102098604160        9.06        4.07  0.46  9.00  3.61 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+246818496 044223.82+155610.9                           3309828246431862784        9.54        4.02  0.46  9.48  3.56 2, 4                              no        -2.76 III         no  no  no  no  no  no  no  no 
+248062465 044242.42+261656.1                            148325565991790464        9.67        3.65  0.46  9.61  3.19 2, 4                              no        -2.70 III         no  no  no  no  no  no  no  no 
+247308630 044253.02+203738.0 TYC1279-1849-2            3411129070196828288 10.41  8.20  2.21  2.21  0.46  8.14  1.75 1, 4  4.3458                      no        -2.88 III  single no  no  no  no  no  no  no  no 
+247308600 044253.09+203737.1 CCDMJ04429+2038AB         3411129070195617152 10.08  8.20  1.88  1.88  0.51  8.13  1.37 1, 2  4.3477                      no        -2.88 III  single no  no  yes no  no  no  no  no 
+247974606 044253.94+253710.2 SSTtau044253.9+253709      148219905500843648       12.96        3.90  2.20 12.67  1.69 3, 1                              yes   12  -2.09 III         no  no  no  no  no  no  no  no 
+247926159 044255.07+251635.7 V*V1059Tau                 148105453212148480        9.65        3.17  0.46  9.59  2.71 2, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+246853551 044303.87+161749.2 HD29868                   3310053577596681856  9.06  7.60  1.46  1.46  0.32  7.56  1.14 1, 2  4.8118 4.4312 9.2053 2.3473 no        -2.76 III  multi  no  no  yes yes no  yes yes no 
+246752099 044313.08+151215.4                           3309635350860951040        7.92        4.61  0.05  7.92  4.55 2, 1  0.8162                      no        -2.75 III  single no  no  yes no  no  no  no  no 
+247753812 044313.75+240520.0 *95Tau                     146841775050361472  6.15  4.85  1.30  1.30  0.46  4.79  0.84 1, 4                              no        -2.85 III         no  no  no  no  no  no  no  no 
+247230237 044315.13+195440.6                           3410201082382895616        8.50        3.59  0.46  8.44  3.13 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+248075297 044324.10+262302.8                            148328001237664384       11.64        3.19  0.46 11.58  2.73 2, 4                              no        -2.83 III         no  no  no  no  no  no  no  no 
+247732254 044324.64+235615.7                            146835070605793792        9.46        3.06  0.88  9.35  2.18 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+248019700 044325.19+255706.2 SSTtau044325.1+255706      148279416567586688        9.45        3.62  0.46  9.39  3.16 3, 4                              no        -2.64 III         no  no  no  no  no  no  no  no 
+247636861 044326.31+231437.6 HD284650                   146587822224421632 10.83  7.72  3.11  3.11  1.97  7.47  1.14 1, 2                              no        -2.88 III         no  no  no  no  no  no  no  no 
+247007336 044333.47+174732.4                           3409383801646110464       10.77        2.73  0.00 10.77  2.73 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+246866887 044333.92+162549.1                           3310056562596452736        8.75        4.35  0.57  8.68  3.78 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247590841 044341.30+225337.6 V*V1332Tau                 146514258024752512        9.89        2.25  0.46  9.83  1.79 2, 4  0.2718                      no        -2.80 III  single yes no  no  no  no  no  no  no 
+246752392 044342.02+151227.5                           3309728019075208448        8.36        4.44  0.46  8.30  3.98 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+247529709 044352.01+222521.9                           3413017447056314112       10.43        2.34  0.46 10.37  1.88 2, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+246670996 044356.88+141202.0                           3308765014390747008        8.59        4.79  0.46  8.53  4.33 2, 4                              no        -2.82 III         no  no  no  no  no  no  no  no 
+247233173 044357.49+195620.0                           3410206373782588800       10.67        2.55  0.72 10.58  1.83 2, 1  4.3357                      no        -2.67 III  single no  no  no  no  no  no  no  no 
+246646208 044358.56+135154.1                           3308363108531053696        8.95        3.71  0.00  8.95  3.71 2, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+248135899 044402.03+265337.2 2MASSJ04440202+2653372     154538111630585216        8.03        4.13  0.46  7.97  3.67 2, 4  0.3512                      no        -2.83 III  single no  no  yes no  no  no  no  no 
+247977428 044405.16+253822.1                            148223066596672128        9.47        2.69  0.75  9.37  1.94 2, 1  4.2908 8.8596               no        -2.75 III  multi  no  no  no  no  no  no  yes no 
+247208136 044414.56+194205.8                           3410182145871414272        8.42        3.79  0.00  8.42  3.79 2, 1                              no        -2.86 III         no  no  no  no  no  no  no  no 
+247241734 044419.09+200108.5                           3410208572805831424       10.71        4.56  0.46 10.65  4.10 3, 4                              no        -2.54 III         no  no  no  no  no  no  no  no 
+247726540 044424.30+235356.1                            147022296820173952       10.28        2.98  0.46 10.22  2.52 2, 4 21.3180                      no        -2.75 III  single no  no  yes no  no  no  no  no 
+247961799 044424.91+253142.6 HD283812                   148200943220970240  9.55  7.65  1.90  1.90  1.71  7.43  0.19 1, 2                              no        -2.88 III         no  no  no  no  no  no  no  no 
+246716677 044425.97+144648.1                           3308857618183445504       10.28        2.26  0.08 10.27  2.17 2, 1                              no        -2.75 III         no  no  no  no  no  no  no  no 
+246962637 044428.91+172135.7                           3406251121219499008       10.01        4.51  0.66  9.93  3.85 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247044786 044428.97+180840.9                           3409419913730950144        8.10        3.71  0.46  8.04  3.25 2, 4                              no        -3.04 III         no  no  no  no  no  no  no  no 
+247528272 044439.17+222441.7                           3413006177063524352       10.11        4.96  0.00 10.11  4.96 3, 1  4.3328                      no        -2.38 III  single no  no  no  no  no  no  no  no 
+248093972 044441.51+263157.1 TYC1839-791-1              154337588198806272 11.02  7.43  3.59  3.59  0.00  7.43  3.59 1, 1                              no        -2.82 III         no  no  no  no  no  no  no  no 
+246704292 044444.74+143736.4 HD30047                   3308799893823282688  8.07  6.97  1.10  1.10  0.46  6.91  0.64 1, 4                              no        -2.88 III         no  no  no  no  no  no  no  no 
+248054085 044453.11+261257.6 SSTtau044453.1+261257      148311955239834368        9.89        2.39  1.09  9.74  1.30 2, 1                              no        -2.84 III         no  no  no  no  no  no  no  no 
+246867518 044515.71+162611.3                           3405945560066695296        9.30        4.62  0.62  9.22  4.00 2, 1  3.8271                      no        -2.71 III  single no  no  yes no  no  no  no  no 
+247561466 044520.28+224001.7                           3413115745973315456        9.77        3.77  0.46  9.71  3.31 2, 4  8.0575 3.3398               no        -2.68 III  multi  no  no  yes no  no  no  yes no 
+248127434 044525.47+264906.2                            154351954864313088        9.55        4.33  0.21  9.52  4.12 2, 1  2.6088                      no        -2.67 III  single no  no  yes no  no  no  no  no 
+247781879 044529.29+241701.4                            147035460895760768        9.67        4.46  0.00  9.67  4.46 3, 1 22.4875                      no        -2.76 III  single no  no  yes no  no  no  no  no 
+247574077 044533.27+224555.0                           3413122519137540096       11.52        2.52  0.46 11.46  2.06 2, 4 17.0744                      no        -2.73 III  single no  no  no  no  no  no  no  no 
+247169098 044534.68+191941.8 HD30123                   3410108311089573376  8.61  7.43  1.18  1.18  1.43  7.25 -0.25 1, 2  0.8413                      yes   9   -2.20 III  single no  no  yes yes no  no  no  no 
+247039017 044536.78+180520.9                           3409407608649115264        8.77        4.12  0.67  8.68  3.45 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247927319 044539.87+251704.6 SSTtau044539.8+251704      147437023157369344        8.46        7.97  3.22  8.05  4.75 4, 1                              yes   8   -2.38 III         no  no  no  no  no  no  no  no 
+246746662 044551.97+150826.0 HD286042                  3308964507031884800 10.35  8.49  1.86  1.86  0.49  8.43  1.37 1, 2  3.4481                      no        -2.96 III  single no  no  yes no  no  no  no  no 
+246899244 044555.50+164446.9 TYC1267-300-1             3405978545415492736 11.55  8.85  2.70  2.70  2.00  8.59  0.70 1, 1  3.4791                      no        -2.57 III  single no  no  yes no  no  no  no  no 
+248066742 044555.75+261858.7 SSTtau044555.7+261858      154272102832530560       11.10        4.48  0.46 11.04  4.02 3, 4  7.3900                      yes   24  -2.10 III  single no  no  yes no  no  no  no  no 
+246916617 044600.85+165451.5                           3406174292844523520        9.85        5.85  1.67  9.63  4.18 2, 1                              no        -2.57 III         no  no  no  no  no  no  no  no 
+247394433 044608.53+212103.7                           3412683848357773824       12.19        4.39  1.13 12.05  3.26 2, 1                              no        -2.56 III         no  no  no  no  no  no  no  no 
+247520247 044617.17+222104.1                           3413046030063639808       10.16        2.10  0.46 10.11  1.64 2, 4  4.6305 4.2856               no        -2.75 III         no  no  yes yes no  yes no  no 
+247802333 044639.87+242526.1 IRAS04435+2419             147066449083506944        5.87        8.58  2.65  5.53  5.93 2, 1                              yes   9   -2.20 III         no  no  no  no  no  no  no  no 
+246921672 044640.79+165750.2                           3406175839032857344        9.32        4.34  0.37  9.27  3.97 2, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+248075421 044644.45+262306.5 [WWV2004]J0446443+262305   154276221704780544        6.20        7.62  2.27  5.91  5.34 2, 1                              yes   9   -2.33 III         no  no  no  no  no  no  no  no 
+247528573 044644.75+222450.8 2MASSJ04464475+2224508    3413052356552023680        9.73        3.38  0.00  9.73  3.37 2, 1                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247798637 044645.55+242355.0 CCDMJ04467+2424B           147063425426530944 13.90  9.51  4.39  4.39  0.46  9.45  3.93 1, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247366468 044645.80+210726.5                           3412630139790780160       13.50        2.07  0.32 13.46  1.76 3, 1  5.1638                      no        -2.80 III  single no  no  yes no  no  no  no  no 
+247833383 044650.39+243815.8 SSTtau044650.3+243815      147352223323209088       13.71        4.38  0.46 13.65  3.92 3, 4                              no        -2.60 III         no  no  no  no  no  no  no  no 
+247594260 044653.27+225512.9 V*V1335Tau                3413138633854938240 12.94  9.02  3.92  3.92  0.69  8.94  3.23 1, 1  3.7998                      no        -2.68 III  single yes no  yes no  no  no  no  no 
+247702773 044659.66+234355.9                            146957253836307840       12.62        3.38  0.46 12.57  2.92 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247295191 044701.14+203031.1                           3410342885023031296        9.13        3.39  0.00  9.13  3.39 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+248049417 044706.73+261045.5 V*RVTau                    154255575798532096  9.80  4.78  5.02  5.02  2.83  4.41  2.19 1, 2                              yes   3.5 -0.48 II          no  no  no  no  no  no  no  no 
+247017059 044719.81+175259.9 TYC1271-1489-1            3406389006849741056 10.90  7.11  3.79  3.79  0.46  7.05  3.33 1, 4  5.4484 2.7352 0.3875        no        -2.83 III  multi  no  no  yes no  no  yes yes no 
+247940031 044725.68+252223.0                            147413040060032512        8.84        5.76  1.07  8.70  4.69 2, 1                              no        -2.65 III         no  no  no  no  no  no  no  no 
+247766950 044739.53+241051.5                            147044531866640512        9.45        4.04  0.46  9.39  3.58 2, 4                              no        -2.69 III         no  no  no  no  no  no  no  no 
+247540251 044743.61+223010.0 SDSSJ044743.63+223009.8   3413065825569401728       15.18        3.59  0.84 15.07  2.76 3, 3                              no        -2.13 III         no  no  no  no  no  no  no  no 
+247312553 044746.25+203942.6                           3411846913850671616        7.66        4.01  0.46  7.60  3.55 2, 4                              no        -2.86 III         no  no  no  no  no  no  no  no 
+248225921 044750.39+274349.8 V*V699Tau                  154710361295622016       11.17        3.65  0.46 11.11  3.19 2, 4                              no        -2.82 III         no  no  no  no  no  no  no  no 
+246747064 044751.27+150842.2                           3308936095824923008        9.61        2.22  1.06  9.47  1.16 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+247587373 044753.47+225201.2                           3413092763604186240       11.17        4.12  0.46 11.11  3.66 2, 4 21.1449                      no        -2.57 III  single no  no  no  no  no  no  no  no 
+247967200 044802.34+253359.2 SSTtau044802.3+253359      147468840275123456       10.29        7.44  2.73  9.94  4.71 4, 1                              no        -2.63 III         no  no  no  no  no  no  no  no 
+247256726 044812.56+200928.5 TYC1288-585-1             3410272030946533248 11.48  9.26  2.22  2.22  0.46  9.20  1.76 1, 4 12.3594                      no        -2.75 III  single no  no  yes no  no  no  no  no 
+247624310 044823.14+230901.1 LAMOSTJ044823.13+230901.1 3413520989023294336        8.73        3.79  0.46  8.67  3.33 2, 4  3.9449                      no        -2.83 III  single no  no  yes no  no  no  no  no 
+247836533 044823.28+243931.6 HAT262-06472               147167569794382976 14.32  9.81  4.51  4.51  0.00  9.81  4.50 1, 1  8.9460                      no        -2.68 III  single yes yes yes no  no  no  no  no 
+247613259 044827.52+230358.6 TYC1831-859-1             3413518068445553536 11.42  8.24  3.18  3.18  0.82  8.13  2.36 1, 1                              no        -2.85 III         no  no  no  no  no  no  no  no 
+247240025 044834.45+200011.0                           3410249598333535616        9.88        3.53  0.46  9.82  3.07 2, 4 13.0522                      no        -2.67 III  single no  no  no  no  no  no  no  no 
+246615751 044834.56+132537.9 2MASSJ04483456+1325379    3296454130588630912 12.44  8.94  3.50  3.50  0.90  8.82  2.60 1, 1                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246926943 044839.24+170058.5                           3406073618811633408       13.34        3.35  0.46 13.28  2.89 3, 4  2.0909                                           single no  no  yes no  no  no  no  no 
+247210486 044845.87+194326.2 HD284827                  3410053335507916672  9.59  7.83  1.76  1.76  0.62  7.75  1.14 1, 2  0.1515 0.1312 0.0944 0.1650 no        -2.82 III  multi  no  no  no  no  no  yes yes yes
+248181214 044859.46+271816.5                            154474894008475264        7.98        4.09  1.03  7.85  3.06 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247774125 044900.16+241346.8 SSTtau044900.1+241346                               15.38        4.77  2.25 15.09  2.52 4, 1                              yes   3.5  0.93 I           no  no  no  no  no  no  no  no 
+247443044 044905.61+214449.4                           3412767720479145984       12.27        3.47  0.46 12.21  3.01 2, 4                              no        -2.60 III         no  no  no  no  no  no  no  no 
+247857331 044912.98+244810.2 V*V808Tau                  147182172683187712  9.49  6.96  2.54  2.54  0.62  6.88  1.91 1, 1  7.4762 3.4833 6.6337        no        -2.80 III  multi  no  no  no  yes yes yes yes no 
+246619939 044913.41+132923.9                           3296477392131479040       11.56        4.50  1.65 11.35  2.84 2, 1                              no        -2.91 III         no  no  no  no  no  no  no  no 
+247833863 044916.35+243827.1 CCDMJ04493+2438A           147153757179559296 12.30  8.97  3.34  3.34  1.36  8.79  1.98 1, 1                              no        -2.57 III         no  no  no  no  no  no  no  no 
+247418888 044919.07+213258.1                           3412749406738632064       10.84        5.70  1.82 10.61  3.88 2, 1  3.4374 0.8239 3.6757        maybe 12: -2.44 III  multi  no  no  no  yes no  yes yes no 
+246748588 044919.74+150947.5 HD286100                  3308927432874692480 11.11  9.36  1.75  1.75  0.41  9.30  1.34 1, 2 19.3678                      no        -2.76 III  single no  no  yes no  no  no  no  no 
+247860817 044931.59+244935.4 SSTtau044931.5+244935      147183173410786560       10.54        4.96  0.76 10.44  4.21 2, 1                              no        -2.48 III         no  no  no  no  no  no  no  no 
+246923297 044933.98+165848.6                           3406070320276876288        9.16        2.35  0.56  9.09  1.80 2, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+248222683 044940.19+274158.4                            154522237431698944        9.64        4.12  0.00  9.64  4.12 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+246650193 044942.28+135511.4                           3308598064718584448        9.98        5.20  1.62  9.77  3.58 2, 1  2.9245 2.7855               maybe 12  -2.49 III  multi  no  no  no  yes yes yes no  no 
+246801415 044945.03+154527.5                           3405108552543875072        8.48        3.58  0.46  8.42  3.12 2, 4                              no        -2.89 III         no  no  no  no  no  no  no  no 
+248153026 044954.70+270250.3                            154416409437554048        9.12        2.66  0.45  9.06  2.21 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247233343 045006.21+195626.1                           3410063574709908096       10.98        4.13  1.87 10.74  2.26 3, 1                              no        -2.60 III         no  no  no  no  no  no  no  no 
+247350520 045006.52+205920.8                           3411874023684146944       12.87        2.80  0.35 12.83  2.45 3, 1                              no        -2.57 III         no  no  no  no  no  no  no  no 
+246734770 045007.59+150000.1                           3404810657908070912        9.92        4.07  0.46  9.86  3.61 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+247682886 045019.60+233514.0                           3413563114062383232       10.59        3.25  0.46 10.53  2.79 2, 4 13.2040                      no        -2.72 III  single no  no  no  no  no  no  no  no 
+247605441 045020.64+230022.2 HD284753                  3413462508748707968 10.26  8.18  2.08  2.08  0.31  8.14  1.77 1, 2  1.6267 1.6766               no        -2.71 III  multi  no  no  yes yes no  yes no  no 
+248248731 045022.53+275751.7                            154905795192725376        8.49        4.12  0.46  8.43  3.66 2, 4                              no        -2.86 III         no  no  no  no  no  no  no  no 
+247406403 045046.08+212653.5 2MASSJ04504608+2126535    3411991259111757952        8.70        3.14  0.46  8.64  2.68 2, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247431982 045053.58+213923.5 1RXSJ045053.5+213927      3412003903495181440        9.57        4.65  0.15  9.55  4.50 2, 2  5.0894                      no        -2.48 III  single no  no  yes no  no  no  no  no 
+247758555 045100.63+240721.5 HD283886                  3413689626619125760  9.88  8.44  1.44  1.44  0.23  8.41  1.20 1, 1                              no        -2.91 III         no  no  no  no  no  no  no  no 
+246683063 045114.57+142123.0 HD286115                  3308639571282577920 10.80  9.01  1.79  1.79  0.02  9.01  1.77 1, 2  8.2852                      no        -2.80 III  single no  no  yes no  no  no  no  no 
+246702820 045119.97+143630.4 HD286110                  3308662519291214720 10.28  6.85  3.43  3.43  0.46  6.79  2.97 1, 4                              no        -2.80 III         no  no  no  no  no  no  no  no 
+247599106 045121.87+225727.4 HD30761                   3413293493195291904  9.29  7.85  1.44  1.44  0.07  7.84  1.37 1, 2                              no        -2.86 III         no  no  no  no  no  no  no  no 
+247012861 045125.99+175041.1                           3406537814580538624       10.59        1.65  1.08 10.45  0.56 2, 1  0.1469 0.0686 0.0581 0.0837 no        -2.70 III  multi  no  no  no  no  no  yes yes yes
+246972498 045141.44+172722.9 HD286076                  3406489612164332416 10.01  6.79  3.22  3.22  1.03  6.66  2.19 1, 2                              no        -2.80 III         no  no  no  no  no  no  no  no 
+247026868 045154.24+175827.9 V*V1343Tau                3406540769517899392 14.26  9.30  4.96  4.96  0.60  9.22  4.36 1, 2  4.3084 4.6220               no        -2.58 III  multi  no  no  no  yes no  yes no  no 
+248238067 045159.90+275106.4                            154890990440473088        7.39        4.51  0.62  7.31  3.88 2, 1                              no        -2.81 III         no  no  no  no  no  no  no  no 
+246762724 045200.50+151938.0                           3404845219509219200        9.26        3.30  0.46  9.20  2.84 2, 4                              no        -2.77 III         no  no  no  no  no  no  no  no 
+246980868 045202.29+173216.5 V*VTau                    3406491811187562368  8.50  4.34  4.16  4.16  2.08  4.07  2.08 1, 1                              yes   4.5 -2.09 III         no  no  no  no  no  no  no  no 
+247620396 045212.78+230713.9 HD284755                  3413302151848411648 10.49  8.86  1.63  1.63  0.26  8.83  1.37 1, 2  4.2685                      no        -2.77 III  single no  no  yes no  no  no  no  no 
+247483597 045229.67+220404.4 HD284878                  3413165984206606336 10.13  6.94  3.19  3.19  1.00  6.81  2.19 1, 2                              no        -2.80 III         no  no  no  no  no  no  no  no 
+246959905 045236.79+172000.5 HD30946                   3406437179203574400  9.25  7.91  1.34  1.34  0.39  7.86  0.94 1, 3  8.0164                      no        -2.86 III  single no  no  yes no  no  no  no  no 
+248245414 045241.74+275544.7                            154869549963684992        9.94        2.22  0.41  9.89  1.81 2, 1                              no        -2.81 III         no  no  no  no  no  no  no  no 
+246628676 045249.61+133704.5 TYC696-1072-1             3296509548550476160 11.22  8.59  2.63  2.63  0.46  8.53  2.17 1, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+247322561 045259.25+204502.4                           3411710673191804928       10.05        3.47  0.46  9.99  3.01 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247226195 045302.84+195224.3                           3411493627021393024       10.15        2.10  0.64 10.07  1.45 2, 1  5.4161                      no        -2.74 III  single no  no  yes no  no  no  no  no 
+246835564 045312.15+160654.2                           3405160577484099712        9.06        4.66  0.57  8.99  4.09 2, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+247814105 045328.04+243022.7 2MASSJ04532804+2430226    3419716290369217792       10.64        3.59  0.46 10.58  3.13 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+246965578 045338.61+172320.6                           3406449991089293184        9.31        3.07  2.72  8.96  0.35 2, 1 13.1260                      no        -2.71 III  single yes yes yes no  no  no  no  no 
+248035134 045351.08+260403.2                            153361844643210752        9.74        4.92  0.47  9.68  4.45 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247443405 045426.00+214500.0 HD31180                   3412346435727480320  9.18  7.91  1.27  1.27  0.99  7.78  0.28 1, 1                              no        -2.85 III         no  no  no  no  no  no  no  no 
+247395276 045437.01+212129.8 HD31197                   3411944972247809792  8.99  6.59  2.40  2.40  0.21  6.57  2.19 1, 2                              no        -2.81 III         no  no  no  no  no  no  no  no 
+248139290 045444.71+265527.3 V*APTau                    153987775998189568       10.08        2.96  2.85  9.71  0.10 2, 1                              no        -2.79 III         no  no  no  no  no  no  no  no 
+246846411 045500.48+161328.2                           3405000254944472192        9.37        3.29  0.46  9.31  2.83 2, 4                              no        -2.54 III         no  no  no  no  no  no  no  no 
+246916682 045501.02+165453.6                           3405647317537614592       11.06        4.48  1.12 10.92  3.36 2, 1 23.1614                      no        -2.52 III  single yes no  no  no  no  no  no  no 
+247389830 045510.29+211850.9 HD284886                  3411757539875244160 10.56  8.61  1.95  1.95  0.61  8.53  1.34 1, 2                              no        -2.84 III         no  no  no  no  no  no  no  no 
+247909155 045522.16+250923.6 2MASSJ04552216+2509236    3419778236683208704       15.39        4.49  0.46 15.33  4.03 3, 4                              yes   3.5  0.60 I           no  no  no  no  no  no  no  no 
+247375215 045523.42+211142.3                           3411751290699480576       10.74        4.99  1.78 10.52  3.21 2, 1  4.3035                      no        -2.62 III  single no  no  yes no  no  no  no  no 
+247077673 045531.00+182718.8                           3406664017899427200       11.52        2.85  1.26 11.36  1.58 2, 1  7.8722                      no        -2.51 III  single no  no  yes no  no  no  no  no 
+247089285 045544.96+183355.7                           3406671542682126464        9.95        4.31  0.46  9.89  3.85 2, 4  2.8435                      no        -2.73 III  single no  no  yes no  no  no  no  no 
+246840416 045545.09+160949.3 TYC1280-407-1             3404997020833379840 12.14 10.77  1.37  1.37  0.74 10.67  0.63 1, 1  0.5062 0.6827               no        -2.76 III  multi  no  no  no  no  no  yes no  no 
+247082570 045546.44+183004.1 TYC1284-1419-1            3406670275668530816 11.22  7.07  4.15  4.15  0.59  6.99  3.57 1, 1 21.5207 3.0688 3.6434        no        -2.84 III  multi  no  no  yes no  no  yes yes no 
+246793080 045547.06+153958.2 TYC1280-720-1             3404919367824048896 11.66  9.77  1.89  1.89  0.46  9.71  1.43 1, 4  2.0910 0.9343               no        -2.75 III  multi  no  no  no  no  no  no  yes no 
+247026458 045549.59+175814.5 TYC1284-1289-1            3406567505691351168 11.82  8.76  3.06  3.06  0.61  8.68  2.46 1, 1                              no        -2.87 III         no  no  no  no  no  no  no  no 
+248268552 045550.36+281042.0                            154961874581167104       12.65        4.35  0.00 12.64  4.35 3, 1                              no        -2.39 III         no  no  no  no  no  no  no  no 
+246982660 045550.74+173321.3                           3405799393739374976        9.03        5.06  1.24  8.87  3.82 2, 1 21.1210                      no        -2.69 III  single no  no  yes no  no  no  no  no 
+246812089 045553.82+155208.5 HD286173                  3404970563834843264 10.69  8.94  1.75  1.75  0.41  8.89  1.34 1, 2  4.5895                      no        -2.79 III  single no  no  yes no  no  no  no  no 
+248241854 045557.96+275328.4 V*AQTau                    154197232963101568 11.14  7.94  3.20  3.20  1.95  7.69  1.25 1, 2                              no        -2.93 III         no  no  no  no  no  no  no  no 
+247624926 045600.09+230917.5                           3413335618235088896        8.19        3.86  0.46  8.13  3.40 2, 4                              no        -2.91 III         no  no  no  no  no  no  no  no 
+248212414 045603.33+273559.8 V*V721Tau                  154083257414059904       10.58        2.65  0.38 10.53  2.27 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+246848340 045612.75+161441.2                           3405372886307333504       10.91        5.07  1.30 10.75  3.77 2, 1  1.5131                      no        -2.55 III  single no  no  no  no  no  no  no  no 
+246731470 045618.26+145739.3                           3392835120856312192        9.32        3.51  0.93  9.20  2.57 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247533173 045630.42+222658.3 TYC1293-1119-1            3412533833740904960 10.83  7.64  3.19  3.19  1.30  7.47  1.89 1, 1                              no        -2.80 III         no  no  no  no  no  no  no  no 
+247805533 045631.25+242648.3 V*V1352Tau                3419679731607745792 12.68 10.23  2.45  2.45  0.64 10.14  1.81 1, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+247303990 045645.25+203511.5 2MASSJ04564525+2035116    3411656286023163264        8.41        2.83  0.00  8.41  2.83 2, 1  0.5498 0.7930               no        -2.83 III  multi  no  no  yes yes no  yes no  no 
+247817875 045646.07+243156.0                           3419682098133350400        9.95        2.36  1.97  9.70  0.39 2, 1 12.4406                      no        -2.74 III  single no  no  yes no  no  no  no  no 
+246765756 045646.80+152145.9 2MASSJ04564680+1521460    3392863841302038272       10.32        5.25  0.25 10.29  5.00 2, 2  2.0493 6.1898               no        -2.53 III  multi  no  no  no  no  no  no  yes no 
+248224646 045649.36+274306.6 EM*MWC740                  154178949285562240       10.30        2.22  2.71  9.95 -0.49 2, 2  0.5484                      yes   12  -2.12 III  single no  no  yes no  no  no  no  no 
+247073855 045650.91+182509.4 WDSJ04568+1825AB          3406619698132322944        8.44        2.03  0.46  8.38  1.57 2, 4                              no        -2.83 III         no  no  no  no  no  no  no  no 
+247961922 045650.95+253146.0                           3419884442634025088        8.99        4.07  0.46  8.93  3.61 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246825172 045656.54+160024.8 V*V1353Tau                3405307396646220416 14.42  9.84  4.58  4.58  0.36  9.80  4.22 1, 2  7.6307                      no        -2.50 III  single no  no  no  no  no  no  no  no 
+247623969 045656.83+230851.4 2MASSJ04565683+2308514    3413344998443648256        9.44        4.43  1.94  9.19  2.49 2, 2  8.4856                      no        -2.65 III  single no  no  no  no  no  no  no  no 
+247003291 045657.78+174518.0                           3405806982946593152        8.66        3.71  0.00  8.66  3.71 2, 1  0.1914                      no        -2.87 III  single no  no  no  no  no  no  no  no 
+247810959 045707.91+242905.4 2MASSJ04570791+2429053    3419678559080300800        9.18        2.84  0.53  9.11  2.31 2, 1  4.7572                      no        -2.73 III  single yes no  no  no  no  no  no  no 
+246730187 045715.84+145644.7                           3392832165918789504        9.68        4.45  1.36  9.51  3.10 2, 1  2.3573                      no        -2.68 III  single no  no  yes no  no  no  no  no 
+246984367 045717.09+173419.5                           3405790700725709312        9.57        3.80  0.00  9.57  3.79 2, 1                              no        -2.70 III         no  no  no  no  no  no  no  no 
+247066764 045724.66+182110.8                           3406603652136020736        8.85        2.91  0.46  8.79  2.45 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246766618 045731.48+152222.0                           3392883671166538368       12.31        4.61  0.46 12.25  4.15 2, 4                              no        -2.37 III         no  no  no  no  no  no  no  no 
+247167676 045733.96+191853.1 HD285098                  3408236766203907712 10.54  8.56  1.98  1.98  1.24  8.40  0.74 1, 1                              no        -2.84 III         no  no  no  no  no  no  no  no 
+247660521 045737.42+232513.9 WISEJ045737.44+232513.9   3413357879049081216       11.11        3.61  0.00 11.11  3.61 2, 1                              no        -2.44 III         no  no  no  no  no  no  no  no 
+247424673 045738.28+213550.7                           3412163401401507328       11.24        3.76  0.00 11.24  3.76 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247733919 045748.64+235654.8 *99Tau                    3419439831914622720  5.81  3.02  2.79  2.79  0.77  2.92  2.02 1, 2                              no        -2.90 III         no  no  no  no  no  no  no  no 
+248217758 045758.51+273907.2 BD+27713                   154134285922595712 11.57  9.40  2.17  2.17  0.64  9.32  1.53 1, 3                              no        -2.67 III         no  no  no  no  no  no  no  no 
+247893813 045809.39+250301.4 *kTau                     3419808305748795520  5.78  5.77  0.01  0.01  0.20  5.75 -0.18 1, 3  1.7359                      no        -2.77 III  single yes no  no  no  no  no  no  no 
+247098906 045820.15+183934.9                           3408128739186466304        9.08        4.03  0.00  9.08  4.03 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+246730761 045835.89+145708.6                           3392788254173268352       10.81        5.19  1.97 10.55  3.22 2, 1  1.5235                      no        -2.54 III  single no  no  no  no  no  no  no  no 
+246723942 045854.49+145206.4 TYC697-402-1              3392774952657917696 12.17  9.88  2.29  2.29  0.00  9.88  2.29 1, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247438068 045859.91+214223.6                           3412157732044815616       10.26        2.99  0.46 10.20  2.53 2, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247098335 045902.81+183915.4 HD286203                  3408139734302744192 10.14  8.63  1.51  1.51  0.14  8.61  1.37 1, 2 13.3105                      no        -2.74 III  single yes yes yes no  no  no  no  no 
+247092409 045914.57+183546.3                           3408135581070985984       10.24        3.24  0.46 10.18  2.78 2, 4 14.9331                      no        -2.79 III  single yes yes yes no  no  no  no  no 
+246798693 045924.56+154342.2                           3393272000633209088        8.60        4.40  0.40  8.55  4.00 2, 1  8.8757                      no        -2.86 III  single no  no  yes no  no  no  no  no 
+247036117 045924.91+180341.5                           3407330154443577216        8.08        3.42  0.46  8.02  2.96 2, 4                              no        -2.88 III         no  no  no  no  no  no  no  no 
+246727991 045926.09+145509.1 HD31819                   3392798798316344064  9.26  7.85  1.41  1.41  0.05  7.84  1.36 1, 3                              no        -2.80 III         no  no  no  no  no  no  no  no 
+247957456 045943.31+252951.6 HD284016                  3419848953319000320 11.56  9.40  2.16  2.16  0.79  9.30  1.37 1, 2 17.0110                      no        -2.76 III  single no  no  yes no  no  no  no  no 
+246816662 045944.32+155500.2 *101Tau                   3393284752392701312  6.75  5.64  1.10  1.10  0.30  5.61  0.81 1, 3                              no        -2.86 III         no  no  no  no  no  no  no  no 
+247807674 045959.06+242741.0 HD284033                  3419572185626866560 10.79  7.24  3.55  3.55  1.06  7.11  2.49 1, 2                              no        -2.81 III         no  no  no  no  no  no  no  no 
+246967187 050000.02+172417.1                           3405744482581624704       11.14        4.39  0.00 11.14  4.38 2, 1                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247392572 050001.72+212008.5                           3412088217998043520       11.88        2.89  0.46 11.82  2.43 2, 4                              no        -2.80 III         no  no  no  no  no  no  no  no 
+246750060 050001.90+151049.5                           3392810725442097152        8.46        3.36  0.00  8.46  3.36 2, 1                              no        -2.89 III         no  no  no  no  no  no  no  no 
+247946210 050005.24+252500.2 IRASF04570+2520           3419844555272494592 14.55  9.45  5.10  5.10  3.28  9.03  1.82 1, 1                              yes   3.5 -0.67 II          no  no  no  no  no  no  no  no 
+247783283 050037.34+241736.4                           3419519439132620160        9.07        3.55  0.46  9.01  3.09 2, 4                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247574079 050055.62+224555.1                           3418515245715938432       10.32        2.79  0.46 10.26  2.33 2, 4 24.2581                      no        -2.66 III  single no  no  no  no  no  no  no  no 
+246799660 050100.37+154418.4 TYC1281-246-1             3393286539099253120 11.91  8.15  3.76  3.76  0.00  8.15  3.76 1, 1                              no        -2.78 III         no  no  no  no  no  no  no  no 
+247910101 050100.52+250947.7                           3419637533553397120        8.99        3.50  0.00  8.99  3.50 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247924036 050142.14+251543.2 V*V592Tau                 3420011028204878208       10.36        3.32  0.46 10.30  2.86 2, 4                              yes   22  -2.21 III         no  no  no  no  no  no  no  no 
+246850182 050159.85+161548.1 TYC1281-1391-1            3393411741689794176 12.01  9.02  2.99  2.99  0.46  8.96  2.53 1, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246843060 050202.44+161126.5 HD32200                   3393398036449903488  8.76  7.47  1.29  1.29  0.65  7.38  0.64 1, 1                              no        -2.88 III         no  no  no  no  no  no  no  no 
+246863138 050205.03+162329.9                           3393413635771101440        9.15        3.56  0.46  9.09  3.10 2, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247807603 050206.82+242739.6 V*V1355Tau                3419539195982229376       10.73        3.32  0.46 10.68  2.86 2, 4  0.1223                      yes   22  -2.23 III  single no  no  no  no  no  no  no  no 
+246890479 050210.04+163939.8                           3405436962923486336       10.79        2.03  0.11 10.78  1.92 2, 1                              no        -2.72 III         no  no  no  no  no  no  no  no 
+247456769 050211.95+215120.2                           3412220644725886464       11.62        4.30  0.82 11.51  3.48 3, 1                              no        -2.76 III         no  no  no  no  no  no  no  no 
+247745384 050215.89+240144.9 HD32190                   3418751571996387712  8.36  7.35  1.01  1.01  1.89  7.10 -0.87 1, 2  1.1102                      yes   9   -2.31 III  single no  no  yes no  no  no  no  no 
+246718076 050228.14+144749.0                           3392922836971564032        9.36        4.18  0.00  9.36  4.18 2, 1  7.9951 5.8785 5.0367        no        -2.69 III  multi  no  no  yes no  no  yes no  no 
+247356149 050228.68+210213.6 TYC1293-1024-1            3409107338895716864 12.42  7.95  4.47  4.47  0.46  7.89  4.01 1, 4                              no        -2.76 III         no  no  no  no  no  no  no  no 
+247508269 050237.33+221531.0                           3412249266387844224       11.64        1.90  0.46 11.58  1.44 3, 4  1.5105 7.0130               no        -2.85 III  multi  no  no  no  no  no  no  yes no 
+247700498 050313.70+234257.6 Cl*NGC1746CUF18           3418679171733746944 12.42 10.75  1.67  1.67  0.77 10.65  0.90 1, 1  1.4380                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+247810224 050322.57+242846.6 HD284101                  3418792391365375616  9.14  7.61  1.53  1.53  1.00  7.48  0.53 1, 2  0.0770 0.0611 0.0580 0.0790 no        -2.78 III  multi  no  no  no  no  no  yes no  yes
+247437523 050327.04+214206.2                           3409210418111521536       15.09        5.71  1.86 14.85  3.85 3, 1                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246726527 050330.25+145404.1 TYC697-1102-1             3392930331690666240 11.18  8.19  2.99  2.99  0.61  8.11  2.39 1, 1                              no        -2.74 III         no  no  no  no  no  no  no  no 
+247537447 050343.19+222853.6 2MASSJ05034320+2228535    3418260635757533952        9.68        3.22  1.73  9.46  1.49 2, 2                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247322746 050351.61+204508.0                           3408896541901026944        8.96        4.31  0.22  8.93  4.10 2, 1  8.1488                      no        -2.81 III  single no  no  yes no  no  no  no  no 
+247380924 050414.36+211433.0                           3409113802822794240       10.64        5.22  1.97 10.38  3.25 3, 1  2.0839                      no        -2.21 III  single no  no  no  no  no  no  no  no 
+247795470 050415.40+242236.1                           3418776684667663360       10.11        4.46  0.46 10.05  4.00 2, 4  2.3140 1.0888               no        -2.69 III  multi  no  no  no  yes no  no  yes no 
+247619795 050420.23+230657.8                           3418355060615589504        8.32        4.20  0.01  8.32  4.20 2, 1  3.8316                      no        -2.90 III  single no  no  yes no  no  no  no  no 
+247434050 050440.60+214024.1                           3409201110917889280        8.25        3.74  0.46  8.19  3.28 2, 4                              no        -2.82 III         no  no  no  no  no  no  no  no 
+247511742 050444.19+221708.4 V*V1356Tau                3418243181011822720 10.76  8.80  1.96  1.96  0.62  8.72  1.34 1, 2                              no        -2.79 III         no  no  no  no  no  no  no  no 
+247445057 050514.27+214548.9 V*VZTau                   3415206707852656384 12.16  9.83  2.33  2.33  0.74  9.74  1.59 1, 1 13.9806                      maybe 12  -2.49 III  single no  no  yes no  no  no  no  no 
+247612547 050537.71+230339.7 V*V1154Tau                3418398212150505472  6.80  6.34  0.46  0.46  0.87  6.23 -0.42 1, 2                              yes   22  -2.45 III         no  no  no  no  no  no  no  no 
+246929548 050538.22+170228.7                           3394956869060226304       10.99        4.78  0.46 10.93  4.32 2, 4                              no        -2.51 III         no  no  no  no  no  no  no  no 
+246843815 050542.12+161153.9 HD32699                   3393359965860005120  9.32  6.60  2.72  2.72  0.95  6.48  1.77 1, 2                              no        -2.83 III         no  no  no  no  no  no  no  no 
+247624511 050552.69+230906.7 TYC1845-3197-1            3418405088395193856 12.14  8.51  3.64  3.64  0.46  8.45  3.18 1, 4                              no        -2.78 III         no  no  no  no  no  no  no  no 
+247361881 050554.27+210508.1                           3408932486483297536        9.81        3.73  0.46  9.75  3.27 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246923013 050627.76+165839.1 TYC1286-1777-1            3394952058696836352 10.35  6.91  3.44  3.44  0.46  6.85  2.98 1, 4                              no        -2.82 III         no  no  no  no  no  no  no  no 
+246786926 050628.29+153556.2                           3393073470064760192        8.33        2.98  0.46  8.27  2.52 2, 4                              no        -2.80 III         no  no  no  no  no  no  no  no 
+247369928 050630.95+210909.7                           3408936364836700544        9.05        4.82  0.77  8.95  4.06 2, 1  3.6990                      no        -2.71 III  single no  no  yes no  no  no  no  no 
+246780573 050635.37+153148.2                           3393068560918115584       10.83        3.82  0.00 10.83  3.82 2, 1                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247360583 050646.62+210429.6 2MASSJ05064662+2104296    3408923003195121024       11.11        6.09  0.25 11.08  5.83 4, 1  0.4389                      no        -2.43 III  single yes no  no  no  no  no  no  no 
+247368219 050649.36+210818.0 LSV+211                   3408935338341183488 11.78 10.49  1.29  1.29  0.16 10.47  1.13 1, 1  1.9439 0.5121 0.3002        no        -2.76 III  multi  no  no  no  yes no  yes yes no 
+247472216 050658.75+215848.5 2MASSJ05065875+2158486    3415193277489016832       10.10        3.69  0.46 10.04  3.23 2, 4                              no        -2.73 III         no  no  no  no  no  no  no  no 
+246937768 050700.88+170712.2 2MASSJ05070089+1707122    3394978378256380672 11.37  9.08  2.29  2.29  2.65  8.74 -0.36 1, 2  3.3020 2.1705 1.0609        no        -2.69 III  multi  no  no  no  no  no  yes yes no 
+246938612 050714.02+170740.5                           3394984116332678528       13.28        2.27  0.46 13.22  1.81 3, 4                              no        -2.59 III         no  no  no  no  no  no  no  no 
+246788123 050718.90+153642.5                           3393093329993535488        8.93        4.54  0.46  8.87  4.08 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+246822724 050809.04+155852.1                           3393109345927427584        9.35        3.70  0.46  9.29  3.24 2, 4  2.8761 3.4887               no        -2.61 III  multi  no  no  no  yes no  yes no  no 
+246904877 050812.60+164759.6 TYC1282-273-1             3394908387469505792 11.15  8.30  2.85  2.85  0.46  8.24  2.39 1, 4                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247369087 050819.66+210844.4 TYC1294-300-1             3414926985222830592 11.30  9.10  2.20  2.20  0.46  9.04  1.74 1, 4                              no        -2.59 III         no  no  no  no  no  no  no  no 
+246889804 050908.68+163915.3 2MASSJ05090868+1639152    3394714495465028608 15.40 13.70  1.70  1.70  0.46 13.64  1.24 1, 4                              no        -2.64 III         no  no  no  no  no  no  no  no 
+246844015 050937.09+161201.6 2MASSJ05093709+1612016    3394618352621408384 14.91  6.47  8.44  8.44  2.57  6.14  5.87 1, 1                              yes   9   -2.22 III         no  no  no  no  no  no  no  no 
+246786764 050941.95+153550.0 *15Ori                    3392331785048050176  4.82  3.96  0.86  0.86  0.46  3.90  0.40 1, 4                              no        -2.88 III         no  no  no  no  no  no  no  no 
+246875826 051046.67+163059.7 HD241303                  3394656496226775168 10.23  7.39  2.85  2.85  0.44  7.33  2.40 1, 3                              no        -2.81 III         no  no  no  no  no  no  no  no 
+246758668 051058.90+151647.1                           3392261072706670464        8.89        3.02  0.46  8.83  2.56 2, 4                              no        -2.75 III         no  no  no  no  no  no  no  no 
+246777371 051100.17+152938.5                           3393815163673474560        9.09        3.38  0.46  9.03  2.92 2, 4                              no        -2.72 III         no  no  no  no  no  no  no  no 
+246868809 051112.05+162657.8 PM2000222632              3394652201259473536 15.49 13.45  2.03  2.03  1.28 13.29  0.75 1, 1                              no        -2.62 III         no  no  no  no  no  no  no  no 
+246931408 051128.80+170332.9 Cl*NGC1817BJG768          3394816475169056128 11.61  8.52  3.10  3.10  0.46  8.46  2.64 1, 4                              no        -2.93 III         no  no  no  no  no  no  no  no 
+246882873 051220.36+163511.6 PM2000224819              3394736588777470720 13.08 11.11  1.97  1.97  0.00 11.11  1.97 1, 1 11.6084                      no        -2.83 III  single no  no  yes no  no  no  no  no 
+247283386 051225.28+202408.9                           3414024324831853312        9.83        4.24  0.24  9.80  4.00 2, 1                              no        -2.66 III         no  no  no  no  no  no  no  no 
+246897707 051226.67+164353.7 V*V1177Tau                3394756139468534400 14.15 12.90  1.25  1.25  0.46 12.84  0.79 1, 4  4.6785                      no        -2.88 III  single no  no  no  no  no  no  no  yes
+246899376 051232.27+164451.8 V*V1178Tau                3394757651297008640 12.58 11.30  1.28  1.28  0.46 11.24  0.82 1, 4                              no        -2.87 III         no  no  no  no  no  no  no  no 
+246895317 051237.39+164230.8 V*V1179Tau                3394745728467803520 14.51 12.98  1.53  1.53  0.89 12.86  0.64 1, 1  0.0541 0.0531               no        -2.79 III  multi  no  no  no  no  no  yes no  yes
+246892794 051240.15+164101.1 V*V1180Tau                3394743976121153536 15.31 13.40  1.92  1.92  0.46 13.34  1.46 1, 4  0.3998                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+246894443 051240.81+164200.3 V*V1181Tau                3394745522309371648 12.85 11.56  1.29  1.29  0.83 11.45  0.46 1, 1  1.6469 0.0529               no        -2.75 III  multi  no  no  no  no  no  no  yes no 
+246893961 051242.82+164143.2 V*V1182Tau                3394745453589894272 13.51 12.31  1.19  1.19  0.46 12.26  0.73 1, 4  0.0502 0.0890 0.0453        no        -2.75 III  multi  no  no  no  no  no  yes yes yes
+246888761 051246.83+163839.5 V*V1183Tau                3394742910969501696 12.89 11.65  1.24  1.24  0.46 11.59  0.78 1, 4  0.0670 0.0913 0.0733        no        -2.86 III  multi  no  no  no  no  no  yes no  yes
+246966148 051247.61+172341.4 TYC1287-12-1              3394851930122534528 11.75  9.34  2.41  2.41  0.46  9.28  1.95 1, 4                              no        -2.74 III         no  no  no  no  no  no  no  no 
+246763563 051304.24+152013.5                           3393753556662478336        8.66        4.63  0.54  8.60  4.09 2, 1  8.5415 2.0388               no        -2.72 III  multi  no  no  no  no  no  no  yes no 
+247232926 051328.88+195610.9                           3413803971533316864        8.62        4.23  0.42  8.57  3.81 2, 1                              no        -2.66 III         no  no  no  no  no  no  no  no 
+247201064 051329.33+193803.6                           3407743570816263296        8.27        3.76  0.46  8.21  3.30 2, 4                              no        -2.86 III         no  no  no  no  no  no  no  no 
+246836348 051414.33+160723.9                           3393910438931818496       10.16        2.80  0.46 10.10  2.34 2, 4  8.7349                      no        -2.73 III  single yes yes yes no  no  no  no  no 
+246796864 051436.90+154227.5                           3393791245000348160       10.78        2.96  0.46 10.72  2.50 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247318677 051441.50+204258.5 TYC1295-130-1             3414056618689369984 10.98  7.10  3.88  3.88  0.00  7.10  3.88 1, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247337567 051449.65+205248.6 HD241896                  3414155682111894272  9.59  8.40  1.19  1.19  0.46  8.34  0.73 1, 4  1.8599 0.9978 4.9639 0.9480 no        -2.80 III  multi  no  no  no  no  no  yes yes no 
+247242690 051456.15+200141.3                           3413762778503133184        9.44        3.88  0.46  9.38  3.42 2, 4                              no        -2.71 III         no  no  no  no  no  no  no  no 
+247179825 051528.41+192552.1 HD241996                  3401717628620527744  9.72  7.74  1.98  1.98  0.61  7.67  1.37 1, 2  1.3694 0.6641 0.4507        no        -2.75 III  multi  no  no  no  no  no  yes yes no 
+247341724 051541.71+205453.6                           3414159526105979136        7.98        4.14  0.04  7.97  4.09 2, 1                              no        -2.82 III         no  no  no  no  no  no  no  no 
+247096671 051549.29+183817.4 HD242055                  3395590595778919680  9.24  7.86  1.38  1.38  0.04  7.85  1.34 1, 2                              no        -2.88 III         no  no  no  no  no  no  no  no 
+246855085 051551.48+161844.6                           3393940675501570944       10.88        1.68  1.10 10.74  0.58 2, 1  2.1375                      no        -2.76 III  single no  no  no  no  no  no  no  no 
+247136595 051600.57+190108.8 TYC1291-1296-1            3395641070234590720 10.48  6.99  3.49  3.49  0.46  6.93  3.03 1, 4                              no        -2.81 III         no  no  no  no  no  no  no  no 
+247095640 051605.86+183741.2                           3395612998328336256        9.20        3.02  0.78  9.10  2.25 2, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247165618 051617.54+191742.8 HD242135                  3401700448751341056  9.30  7.95  1.35  1.35  0.00  7.95  1.35 1, 1  6.1123 5.1546               no        -2.95 III  multi  no  no  no  no  no  yes no  no 
+247253928 051731.15+200754.6 V*CDTau                   3413776384959602816  6.77  5.59  1.18  1.18  0.78  5.49  0.40 1, 2                              no        -2.97 III         no  no  no  no  no  no  no  no 
+247296236 051821.44+203103.5 TYC1291-117-1             3413886164323627264  9.29  6.00  3.29  3.29  0.00  6.00  3.29 1, 1                              no        -2.82 III         no  no  no  no  no  no  no  no 
+247124901 051851.75+185424.9                           3401435947485405056       10.44        4.75  1.22 10.29  3.52 2, 1                              no        -2.52 III         no  no  no  no  no  no  no  no 
+247184815 052009.60+192849.0 V*V1216Tau                3401672617363461504        5.02       10.64  2.57  4.69  8.07 6, 1                              yes   4.6 -1.98 III         no  no  no  no  no  no  no  no 
+247299413 052012.68+203246.7 TYC1304-1621-1            3401902484012873984 10.71  8.94  1.77  1.77  0.00  8.94  1.76 1, 1                              no        -2.68 III         no  no  no  no  no  no  no  no 
+247195129 052018.29+193441.6 V*V1159Tau                3401770336459470720  6.68  6.80 -0.12 -0.12  0.05  6.79 -0.17 1, 3  1.6401                      no        -2.89 III  single no  no  no  no  no  no  no  no 
+247182519 052030.33+192727.5 TYC1304-797-1             3401671861449315456 10.71  7.62  3.09  3.09  0.00  7.62  3.09 1, 1                              no        -2.77 III         no  no  no  no  no  no  no  no 
+247122185 052037.95+185251.9                           3401449584005867648        7.63        6.05  1.65  7.42  4.41 3, 1                              no        -2.73 III         no  no  no  no  no  no  no  no 
+247234998 052042.25+195722.9 HD242768                  3401795900104650368  9.74  7.39  2.35  2.35  0.98  7.27  1.37 1, 2  2.8937 6.4666               no        -2.80 III  multi  no  no  no  no  no  no  yes no 
+247233210 052104.40+195621.1                           3401795242974668672        8.65        3.75  0.00  8.65  3.75 2, 1                              no        -2.88 III         no  no  no  no  no  no  no  no 
+247344162 052114.73+205605.9                           3414300538471894528       15.92        3.80  0.46 15.86  3.34 3, 4                              no        -3.86 III         no  no  no  no  no  no  no  no 
+247278817 052126.29+202138.5                           3401881211040055296        8.87        3.11  0.46  8.81  2.65 2, 4                              no        -2.85 III         no  no  no  no  no  no  no  no 
+247159284 052250.00+191410.1 2MASSJ05224999+1914102    3401509404309694976 14.50  9.26  5.24  5.24  5.01  8.62  0.23 1, 2  1.1402                      no        -2.58 III  single no  no  no  no  no  no  no  no 
