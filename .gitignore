@@ -3,10 +3,4 @@
 .ipynb_checkpoints/
 
 **/__pycache__/
-build/
 
-data/*
-lightcurves/*
-output/*
-
-!*/.gitkeep
