@@ -1,0 +1,42 @@
+query = select source_id,
+	ra, dec, parallax, ruwe,
+	phot_g_mean_mag,
+	phot_bp_mean_mag,
+	phot_rp_mean_mag,
+	bp_rp, bp_g, g_rp
+from gaiadr3.gaia_source
+	where source_id in ('5969505470595968000', '6019068396739406848')
+
+SELECT us.*,
+	gaia.ra, gaia.dec, gaia.parallax, gaia.ruwe,
+	gaia.phot_g_mean_mag,
+	gaia.phot_bp_mean_mag,
+	gaia.phot_rp_mean_mag,
+	gaia.bp_rp, gaia.bp_g, gaia.g_rp,
+	gaia.phot_variable_flag
+FROM user_sdraves."IDtable" as us
+left join gaiadr3.gaia_source as gaia
+on us.gaiadr3_source_id=gaia.source_id
+
+SELECT us.*,
+	gaia.*
+FROM user_sdraves."IDtable" as us
+left join gaiadr3.gaia_source as gaia
+on us.gaiadr3_source_id=gaia.source_id
+
+gaia nearby stars ID source: https://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/649/A6 
+
+SELECT us1.*,
+	gaia.*,
+	us2.*
+FROM gaiadr3.gaia_source as gaia
+left join user_sdraves."IDtable" as us1
+	on us1.gaiadr3_source_id=gaia.source_id
+left join user_sdraves.nearbyids as us2
+	on us2."GaiaEDR3"=gaia.source_id
+where (us1.gaiadr3_source_id is not null or us2."GaiaEDR3" is not null)
+
+case when statement if that worked in adql but it's not supported: 
+    case when us1.gaiadr3_source_id is not null then "our table"
+        when us2."GaiaEDR3" is not null then "nearby table"
+        else "no table" end as table_source
