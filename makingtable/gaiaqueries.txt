@@ -24,6 +24,12 @@ FROM user_sdraves."IDtable" as us
 left join gaiadr3.gaia_source as gaia
 on us.gaiadr3_source_id=gaia.source_id
 
+SELECT us.*,
+	gaia.*
+FROM user_sdraves.ourgaiaids as us
+left join gaiadr3.gaia_source as gaia
+on us.gaiadr3_source_id=gaia.source_id
+
 gaia nearby stars ID source: https://cdsarc.u-strasbg.fr/viz-bin/cat/J/A+A/649/A6 
 
 SELECT us1.*,
